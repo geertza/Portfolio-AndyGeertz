@@ -6,21 +6,22 @@
 .icon{
     height: 50px;
     background-color: darkgrey;
-
-   
     border-radius: 50%;
    
 }
 .navbar {
 	position: fixed;
     z-index: 9999;
+    width: 100vw;
     background: rgba(17, 17, 17, 0.671);
     background-image: url(../../visuals/clouds4.png);
     background-size: 80% 80%;
+    max-height: 20vh;
 }
 h2{
     font-family: 'Grandstander', cursive;
-    color: rgba(22, 22, 21, 0.993);
+    color: rgba(153, 153, 36, 0.993);
+    text-shadow: black 2px 2px;
 }
 p{
     color: black
