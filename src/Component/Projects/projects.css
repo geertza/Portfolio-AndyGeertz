@@ -1,0 +1,53 @@
+body{
+    background-image: url('../../visuals/stars2.png');
+    background-color:rgb(51, 46, 46);
+}
+.projects{
+    background-image: url('../../visuals/sun.png');
+    background-color: rgb(51, 46, 46);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+}
+.tShadow{
+    color: rgb(146, 146, 30);
+    font-weight: 400;
+    text-shadow: black 1px 1px;
+}
+.Protitle{
+    width: 30vw;
+    height: 30vw;
+    margin: 5vh 33vw 0 33vw;
+    line-height: 30vw;
+    padding: 0;
+    text-align: center;
+    font-size: 6vw;
+    background-image: url('../../visuals/deathStar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.proImage{
+    width: 100%;
+    height: 100%;
+}
+.proBox{
+    background-color: rgba(128, 128, 128, 0.884);
+    padding: 0%;
+    color: black;
+    /* margin-left:  10vw; */
+    margin-top: 5vh;
+    padding: 3px;
+    max-width: 35vw;
+   }
+.probutton{
+    float: right;
+    border-radius: 10px;
+}
+h5{
+    font-size: 20px;
+}
+.ProCluster{
+    border-style: ridge  ;
+    border-width: 10px;
+    border-color: rgba(60, 60, 214, 0.973);
+}

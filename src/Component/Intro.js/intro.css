@@ -2,11 +2,12 @@
 h1, .aboutText {
     color: rgba(153, 153, 36, 0.993);
     font-weight: 300;
+    
 }
 
 .about {
     color: honeydew;
-    background: rgba(105, 105, 105, 0.493);
+    background: rgba(105, 105, 105, 0.226);
     text-align: center;
      position: relative;
     top: 22vh; 
@@ -17,6 +18,11 @@ h1, .aboutText {
     padding: 0 10px;
     text-shadow: black 2px 2px;
     overflow: scroll;
+   
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 .avatar{
     height: 40vh;
@@ -63,11 +69,11 @@ h1, .aboutText {
     to {background-position:10000px 0;}
 }
 .stars, .twinkling, .clouds {
-  position:absolute;
+  position: relative;;
   top:0;
   left:0;
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
 }
 .stars {
   background:#000 url(../../visuals/stars2.png) repeat top center;
@@ -90,8 +96,4 @@ h1, .aboutText {
   -o-animation:move-clouds-back 1200s linear infinite;
   -webkit-animation:move-clouds-back 1200s linear infinite;
   animation:move-clouds-back 1200s linear infinite;
-}
-header{
-    position: absolute;
-    top: 25vh;
 }
