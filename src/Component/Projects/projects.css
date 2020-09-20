@@ -29,9 +29,10 @@ body{
 .proImage{
     width: 100%;
     height: 100%;
+    margin: 0%;
 }
 .proBox{
-    background-color: rgba(128, 128, 128, 0.884);
+    background-color: vbm;
     padding: 0%;
     color: black;
     /* margin-left:  10vw; */
@@ -42,12 +43,18 @@ body{
 .probutton{
     float: right;
     border-radius: 10px;
+    margin: 2px;
 }
 h5{
     font-size: 20px;
+    margin: 2px;
 }
 .ProCluster{
     border-style: ridge  ;
     border-width: 10px;
-    border-color: rgba(60, 60, 214, 0.973);
+    border-color: rgba(30, 30, 65, 0.973);
+    background-image: url('../../visuals/stars2.png');
+    background-color: black;
+    padding: 0%;
+    height: auto;
 }

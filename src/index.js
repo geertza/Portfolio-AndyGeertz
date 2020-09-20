@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-import About from './Component/Intro.js/Intro'
 import Header from './Component/Header/Header'
 import Project from './Component/Projects/Projects'
+import About from './Component/Intro.js/Intro'
+import Contact from './Component/Contact/Contact'
 ReactDOM.render(
   <React.Fragment>
     <Header />
-    <About />
+    {/* <About /> */}
     <Project />
-    {/* <Footer /> */}
+    <Contact />
     </React.Fragment>,
   document.getElementById('root')
 );
