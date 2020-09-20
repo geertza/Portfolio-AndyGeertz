@@ -1,13 +1,83 @@
-.contact{
-    /* background-image: url('https://cdn4.explainthatstuff.com/satellitedishantenna.jpg');
-    background-size: 100% 100%; */
-    background-color: rgba(146, 146, 30, 0.788);;
-    width: 70vw;
-    margin:  10vw;
+.bottom{
+ background-image: url('https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=1950&q=80');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    position: relative;
+    bottom: 0%; 
+    min-height: 100vh;
+    width: 200vw;
+    border-radius: 100% 100% 0 0;
+    position: relative;
+    left: -50vw; 
 }
+.contact{
+    
+    /* background: rgb(185,211,219);
+    background: linear-gradient(90deg, rgba(185,211,219,1) 0%, rgba(58,92,118,1) 99%); */
+    width: 70vw;
+    margin-left: 60vw;
+}
+
+.contactMe{
+    /* background-image: url('../../visuals/sat.png'); */
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin-top: 10vh;
+}
+.contactForm{
+    width: 100%;
+    max-height: 70vh;
+    margin: 0 20%;
+}
+a { 
+    color: gold;
+    font-weight: 500;
+    text-shadow: rgb(44, 36, 36) .5px .5px;
+    text-decoration: underline;
+    font-size: 22px;
+  }
+a:hover{
+    color: red;
+}
+
 h3{
-    color: rgb(33, 33, 230) ;
-    text-shadow: rgba(73, 67, 67, 0.884) 2px 2px;
+    color: gold;
+}
+.cutoff{
+    margin-top: 10vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.sat{
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    left: 40%;
+    top: 30%;
+}
+
+@media screen and (max-width: 575px) {
+    .bottom {
+        width: 300%;
+        left: -80%;
+    }
+    .contact{
+        margin-left: 30%;
+    }
+  
+  .ProCluster{
+      width: 80%;
+      margin: 10%;
+  }
+  .contactForm{
+      margin: 0;
+      margin-top: -25vh ;
+  }
+  .contactMe{
+    margin: 0;
+    margin-top: -5vh ;
+}
 }
 
 

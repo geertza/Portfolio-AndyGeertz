@@ -75,21 +75,29 @@ h1, .aboutText {
   width:100vw;
   height:100vh;
 }
-.stars {
-  background:#000 url(../../visuals/stars2.png) repeat top center;
-  z-index:0;
-}
-.twinkling{
-  background:transparent url(../../visuals/twinkling.png) repeat top center;
-  z-index:1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}
 .clouds{
-    background: url(../../visuals/clouds6.png) repeat top center;
+    height: auto;
+    position: absolute;
+    top: 0%;
+}
+.stars {
+    background:#000 url(../../visuals/stars2.png) repeat top center;
+    z-index:0;
+  }
+  .twinkling{
+    background:transparent url(../../visuals/twinkling.png) repeat top center;
+    z-index:1;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }
+.clouds{
+    background: url(../../visuals/clouds6wave.png) repeat top center;
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    height: 130%;
     z-index:3;
   -moz-animation:move-clouds-back 1200s linear infinite;
   -ms-animation:move-clouds-back 1200s linear infinite;
@@ -97,3 +105,4 @@ h1, .aboutText {
   -webkit-animation:move-clouds-back 1200s linear infinite;
   animation:move-clouds-back 1200s linear infinite;
 }
+
