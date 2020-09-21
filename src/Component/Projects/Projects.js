@@ -26,7 +26,7 @@ class Intro extends React.Component {
                                 
                                 <img src={Nerd} alt="" className='proImage ' />
                                 <FigureCaption>
-                                    <h5 className="tShadow">Nerd Verse</h5>
+                                    <h2 className="tShadow">Nerd Verse</h2>
                                     <span><h5 className="tShadow">Basic Javascript</h5></span>
                                     <Button variant="warning" className='probutton'>Take a look</Button>
                                 </FigureCaption>
@@ -41,7 +41,7 @@ class Intro extends React.Component {
                         <Figure>
                                 <img src={Nerd} alt="" className='proImage' />
                                 <FigureCaption>
-                                    <h5 className="tShadow">Nerd Verse</h5>
+                                    <h2 className="tShadow">Nerd Verse</h2>
                                     <span><h5 className="tShadow">Basic Javascript</h5></span>
                                     <Button variant="warning" className='probutton'>Take a look</Button>
                                     
@@ -54,7 +54,7 @@ class Intro extends React.Component {
                                 
                                 <img src={Nerd} alt="" className='proImage ' />
                                 <FigureCaption>
-                                    <h5 className="tShadow">Nerd Verse</h5>
+                                    <h2 className="tShadow">Nerd Verse</h2>
                                     <span><h5 className="tShadow">Basic Javascript</h5></span>
                                     <Button variant="warning" className='probutton'>Take a look</Button>
                                 </FigureCaption>
@@ -69,7 +69,7 @@ class Intro extends React.Component {
                         <Figure>
                                 <img src={Nerd} alt="" className='proImage' />
                                 <FigureCaption>
-                                    <h5 className="tShadow">Nerd Verse</h5>
+                                    <h2 className="tShadow">Nerd Verse</h2>
                                     <span><h5 className="tShadow">Basic Javascript</h5></span>
                                     <Button variant="warning" className='probutton'>Take a look</Button>
                                     

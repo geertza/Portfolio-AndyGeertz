@@ -14,7 +14,7 @@ export default function about() {
           
           <div className="clouds" >
           <div className='about'>
-              <h1> Nice to meet you!</h1>
+              <h2 style={{fontSize:'7vw'}}> Nice to meet you!</h2>
               <div className='intro'>
               <img src={avatar}  alt=''className='avatar'/>
               

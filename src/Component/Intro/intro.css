@@ -97,7 +97,7 @@ h1, .aboutText {
     background: url(../../visuals/clouds6wave.png) repeat top center;
     background-size: 100% 100%;
     background-repeat: repeat-x;
-    height: 130%;
+    height: 110%;
     z-index:3;
   -moz-animation:move-clouds-back 1200s linear infinite;
   -ms-animation:move-clouds-back 1200s linear infinite;
