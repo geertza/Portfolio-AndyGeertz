@@ -1,28 +1,84 @@
-import React  from 'react';
-import {Figure, Row,Container,Col,Button} from 'react-bootstrap';
+import React from 'react';
+import {Figure, Button} from 'react-bootstrap';
 import FigureCaption from 'react-bootstrap/FigureCaption'
 import './projects.css'
 import Nerd from '../../visuals/nerdverse.png'
+import MyVerticallyCenteredModal from './Modal'
+
+const test= "Nerd Verse"
 
 
 
-
-
-
-class Intro extends React.Component {
-   
+function Intro() {
+    const [modalShow, setModalShow] = React.useState(false);
    
     
-    render() {
+   
 
   
       return (
           <div className='projects '>
                 <h1  className='Protitle tShadow  '>Projects</h1>
-              <Container >
-                    <Row>
-                        <Col sm={5} className='ProCluster '  >
-                        <Figure >
+                <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)} />
+                  <br />
+                  <div className='proGrid '>
+                  <Figure  className='ProCluster'>
+                                
+                                <img src={Nerd} alt="" className='proImage ' />
+                                <FigureCaption>
+                                    <h2 className="tShadow">Nerd Verse</h2>
+                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
+                                    <Button variant="warning" className='probutton'>Take a look</Button>
+                                </FigureCaption>
+                            
+                            </Figure>
+                            <Figure className='ProCluster' >
+                                
+                                <img src={Nerd} alt="" className='proImage ' />
+                                <FigureCaption>
+                                    <h2 className="tShadow">Nerd Verse</h2>
+                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
+                                    <Button variant="warning" className='probutton'>Take a look</Button>
+                                </FigureCaption>
+                            
+                            </Figure>
+                            <Figure className='ProCluster'>
+                                
+                                <img src={Nerd} alt="" className='proImage ' />
+                                <FigureCaption>
+                                    <h2 className="tShadow">Nerd Verse</h2>
+                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
+                                    <Button variant="warning" className='probutton'>Take a look</Button>
+                                </FigureCaption>
+                            
+                            </Figure>
+                            <Figure  className='ProCluster'>
+                                
+                                <img src={Nerd} alt="" className='proImage ' />
+                                <FigureCaption>
+                                    <h2 className="tShadow">Nerd Verse</h2>
+                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
+                                    <Button variant="warning" className='probutton'>Take a look</Button>
+                                </FigureCaption>
+                            
+                            </Figure>
+                            <Figure className='ProCluster' >
+                                
+                                <img src={Nerd} alt="" className='proImage ' />
+                                <FigureCaption>
+                                    <h2 className="tShadow">Nerd Verse</h2>
+                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
+                                    <Button variant="warning" className='probutton'>Take a look</Button>
+                                </FigureCaption>
+                            
+                            </Figure>
+                            <Figure className='ProCluster'>
                                 
                                 <img src={Nerd} alt="" className='proImage ' />
                                 <FigureCaption>
@@ -33,55 +89,13 @@ class Intro extends React.Component {
                             
                             </Figure>
                             
-                        </Col>
-                        <Col sm={2}>
-                        </Col>
-                        <Col sm={5} className='ProCluster  '>
-                            
-                        <Figure>
-                                <img src={Nerd} alt="" className='proImage' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                    
-                                </FigureCaption>
-                            </Figure>
-                        </Col>
-                    </Row>
-                    <Row>            <Col sm={5} className='ProCluster ProNerd'  >
-                        <Figure >
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            
-                        </Col>
-                        <Col sm={2}>
-                        </Col>
-                        <Col sm={5} className='ProCluster  '>
-                            
-                        <Figure>
-                                <img src={Nerd} alt="" className='proImage' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                    
-                                </FigureCaption>
-                            </Figure>
-                        </Col>
-                    </Row>
-                   </Container>                         
+                  </div>
+                   
+                   {/* </Container>                          */}
                        
                     </div>
       )
-    }
+    
 }
 
 export default Intro;

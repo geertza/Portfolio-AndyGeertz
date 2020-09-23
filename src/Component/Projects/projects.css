@@ -31,15 +31,7 @@ body{
     height: 100%;
     margin: 0%;
 }
-.proBox{
-    background-color: rgba(128, 128, 128, 0.884);
-    padding: 0%;
-    color: black;
-    /* margin-left:  10vw; */
-    margin-top: 5vh;
-    padding: 3px;
-    max-width: 35vw;
-   }
+
 .probutton{
     float: right;
     border-radius: 10px;
@@ -55,7 +47,41 @@ h5{
     border-width: 10px;
     border-color: rgba(30, 30, 65, 0.973);
     background-color: black;
-    padding: 0%;
-    height: auto;
-    margin: 5vh 0;
+    padding: 10px;
+    width: 30vw;
+    margin-left: 2vw;
 }
+
+.proGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    }
+
+    @media screen and (max-width: 700px) {
+        .proGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+            } 
+        .ProCluster {
+            width: 45vw;
+        }     
+    }
+
+    @media screen and (max-width: 460px) {
+        .proGrid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+            } 
+        .ProCluster {
+            width: 80vw;
+        }     
+    }
