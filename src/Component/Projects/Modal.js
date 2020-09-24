@@ -15,21 +15,26 @@ class MyVerticallyCenteredModal extends React.Component {
       displayTitle:'',
       displayP1:'',
       displayP2:'',
-      displayImg:'nerd',
-      lang:[]
+      lang:[],
+      git:'',
+      demo:'',
+      img:'sunLogo.png'
     };
   }
+  
   componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
     if (this.props.title !== prevProps.title) {
       let x = this.props.title
-      const {title,p1,p2,img,lang}=projectInfo[x]
+      const {title,p1,p2,img,lang,git,demo}=projectInfo[x]
       this.setState({
         displayTitle: title, 
         displayP1:p1,
         displayP2:p2,
-        displayImg:img,
-        lang:lang  
+        lang:lang,
+        git: git,
+        demo: demo,
+        img: img  
      });
     
     }
@@ -51,19 +56,22 @@ class MyVerticallyCenteredModal extends React.Component {
         style={{
             background:"grey",
             paddingLeft: "30%",
-            height:"50px"
+            height:"auto"
            
         }}
          closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            <h2
+            <h1
                 className="flicker"
                style={{
                 textAlign:"center",
                 fontSize:"45px",
-                lineHeight:"25px"
+                lineHeight:"25px",
+                width:"100%",
+                position:"relative",
+                left:'-10%'
             }}
-            >{this.props.title}</h2>
+            >{this.state.displayTitle}</h1>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body
@@ -73,30 +81,28 @@ class MyVerticallyCenteredModal extends React.Component {
         >
                 <Row>
                   <Col md={8}>
-                  <div 
+                  <img src={require(`../../visuals/${this.state.img}`)} alt=''
                 style={{
                 width:'100%',
-                height:'35vh',
-                backgroundImage: `url(${this.props.image})`,
-                backgroundSize:'cover',
-                backgroundRepeat:'no-repeat'
+                height:'auto',
+                  
                 }}
                 />
                 </Col>
                 <Col md={4}> 
-                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"4% 6%"}} >GitHub Code</Button>
-                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"4% 6%"}} >Live Demo</Button>
+                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"4% 6%",textShadow:"grey .5px .5px"}} href={this.state.git}>GitHub Code</Button>
+                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"4% 6%",textShadow:"grey .5px .5px"}} href={this.state.demo}>Live Demo</Button>
                 </Col>
                 </Row>
 
 
             <Row>
                 <Col>
-                    <h4>Basic Discription</h4>
+                    <h5>Basic Discription</h5>
                     <p style={{color:'white'}}>
                     {this.state.displayP1}
                     </p>
-                    <h4>Technical Discription</h4>
+                    <h5>Technical Discription</h5>
                     <p style={{color:'white'}}>
                        {this.state.displayP2}
                     </p>

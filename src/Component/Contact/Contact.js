@@ -3,7 +3,7 @@ import React from 'react';
 
 import {Form,Row,Col,InputGroup,FormControl,Button} from 'react-bootstrap'
 import './contact.css'
-import sat from '../../visuals/sat.png'
+
 class Contact extends React.Component {
   constructor() {
     super()
@@ -76,7 +76,7 @@ class Contact extends React.Component {
   render() {
       return (
         <div className='cutoff'>
-            <img   src={sat} alt='' className='sat'></img>
+           
             <div className='curve' >
                 <div className='bg'>
                 

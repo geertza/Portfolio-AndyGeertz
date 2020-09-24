@@ -2,109 +2,76 @@ import React from 'react';
 import {Figure, Button} from 'react-bootstrap';
 import FigureCaption from 'react-bootstrap/FigureCaption'
 import './projects.css'
-import Nerd from '../../visuals/nerdverse.png'
+
 import MyVerticallyCenteredModal from './Modal'
 
-
-
+//---------images------------
+import Nerd from '../../visuals/nerdverse.png'
+import Sloshed from '../../visuals/sloshed.png'
+import Burger from '../../visuals/burger-time.png'
 
 
 function Intro() {
     const [modalShow, setModalShow] = React.useState(false);
-    const [title, setTitle] = React.useState('loading');
-    
+    const [title, setTitle] = React.useState('nerd');
+
     
 
   
-      return (
-          <div className='projects '>
-              
-                <h1  className='Protitle tShadow  '>Projects</h1>
-               
-
-      <MyVerticallyCenteredModal
-        title={title}
-        image={Nerd}
-        show={modalShow}
-        onHide={() => 
-        setModalShow(false)} />
-                  
-                  <br />
-                  <div className='proGrid '>
-                  <Figure className='ProCluster' >
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'
-                                         onClick={() =>{ 
-                                        setTitle('nerdverse');
-                                        setModalShow(true)}}>
-                                         Take a look
-                                    </Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            <Figure className='ProCluster' >
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'
-                                         onClick={() =>{ 
-                                        setTitle('nerdverse');
-                                        setModalShow(true)}}>
-                                         Take a look
-                                    </Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            <Figure className='ProCluster'>
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            <Figure  className='ProCluster'>
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            <Figure className='ProCluster' >
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            <Figure className='ProCluster'>
-                                
-                                <img src={Nerd} alt="" className='proImage ' />
-                                <FigureCaption>
-                                    <h2 className="tShadow">Nerd Verse</h2>
-                                    <span><h5 className="tShadow">Basic Javascript</h5></span>
-                                    <Button variant="warning" className='probutton'>Take a look</Button>
-                                </FigureCaption>
-                            
-                            </Figure>
-                            
-                  </div>
+    return (
+        <div className='projects '> 
+            <h1  className='Protitle ' style={{fontSize:'8vw'}}>Projects</h1>
+                <MyVerticallyCenteredModal
+                    title={title}
+                    show={modalShow}
+                    onHide={() => 
+                    setModalShow(false)} />
+                    <br />
+                    <div className='proGrid '>
+                        {/* ---------------------nerdverse------------------- */}
+                        <Figure className='ProCluster' >
+                            <img src={Nerd} alt="" className='proImage ' />
+                            <FigureCaption>
+                                <h4 >Nerd Verse</h4>
+                                <Button variant="warning" className='probutton'
+                                    onClick={() =>{ 
+                                    setTitle('nerdverse')
+                                    setModalShow(true)}}>
+                                    Take a look
+                                </Button>
+                            </FigureCaption>
+                        </Figure>
+                           {/* ----------------------Sloshed----------------                  */}
+                           <Figure className='ProCluster' >
+                            <img src={Sloshed} alt="" className='proImage ' />
+                            <FigureCaption>
+                                <h4 className="tShadow">The Sloshed Guide</h4>
+                               
+                                <Button variant="warning" className='probutton'
+                                    onClick={() =>{ 
+                                    setTitle('sloshed')
+                                    setModalShow(true)}}>
+                                    Take a look
+                                </Button>
+                            </FigureCaption>
+                        </Figure>
+                        {/* -----------------burger-------------- */}
+                        <Figure className='ProCluster' >
+                            <img src={Burger} alt="" className='proImage ' />
+                            <FigureCaption>
+                                <h4 className="tShadow">Burger Time 2</h4>
+                                <Button variant="warning" className='probutton'
+                                    onClick={() =>{ 
+                                    setTitle('burger')
+                                    setModalShow(true)}}>
+                                    Take a look
+                                </Button>
+                            </FigureCaption>
+                        </Figure>
+                     
+                    </div>
                    
-                   {/* </Container>                          */}
+             
                        
                     </div>
       )
