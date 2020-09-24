@@ -10,10 +10,10 @@ import Contact from './Component/Contact/Contact'
 ReactDOM.render(
   <React.Fragment>
    <Mod />
-    {/* <Header /> */}
-    {/* <About /> */}
+    <Header />
+    <About />
     <Project />
-    {/* <Contact /> */}
+    <Contact />
     </React.Fragment>,
   document.getElementById('root')
 );
