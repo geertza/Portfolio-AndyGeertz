@@ -5,27 +5,35 @@ import './projects.css'
 import Nerd from '../../visuals/nerdverse.png'
 import MyVerticallyCenteredModal from './Modal'
 
-const test= "Nerd Verse"
+
 
 
 
 function Intro() {
     const [modalShow, setModalShow] = React.useState(false);
-   
+    const [title, setTitle] = React.useState('loading');
     
-   
+    
 
   
       return (
           <div className='projects '>
+              
                 <h1  className='Protitle tShadow  '>Projects</h1>
-                <Button variant="primary" onClick={() => setModalShow(true)}>
+                <Button variant="primary" onClick={() =>{ 
+                    setTitle('nerdverse');
+                    setModalShow(true)}}>
         Launch vertically centered modal
       </Button>
 
       <MyVerticallyCenteredModal
+        title={title}
+        p1={`Basic trivia game about popular science-fiction tv-shows and movies.
+        Starts out with a dialogue introduction then asks multiply choice questions.`}
         show={modalShow}
-        onHide={() => setModalShow(false)} />
+        onHide={() => 
+        setModalShow(false)} />
+                  
                   <br />
                   <div className='proGrid '>
                   <Figure  className='ProCluster'>
