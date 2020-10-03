@@ -15,7 +15,7 @@
     sloshed:{
       title:"The Sloshed Guide",
       p1:"The Sloshed Guide is an app that gives the user access to a large database of local breweries. The user can search either a specific brewery or search by their zip code. Once the user finds the desired brewery, they will be given the address and the weather conditions in the brewery's area",
-      p2:"Use of apis to get information and dynamically create a list of brewerys in a given area and create a background representing the weather for tonight.",
+      p2:"Use of apis to get information and dynamically create a list of breweries in a given area and create a background representing the weather for tonight.",
       img:'sloshed.png',
       lang:['html','css','js'],
     demo: 'https://ashtonwalden34.github.io/the-sloshed-guide/',

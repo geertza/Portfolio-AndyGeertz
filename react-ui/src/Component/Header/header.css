@@ -20,8 +20,8 @@
 }
 h2{
     font-family: 'Grandstander', cursive;
-    color: rgba(153, 153, 36, 0.993);
-    text-shadow: black 2px 2px;
+    color: gold;
+    text-shadow: rgb(86, 69, 66) .8px .8px;
 }
 p{
     color: black

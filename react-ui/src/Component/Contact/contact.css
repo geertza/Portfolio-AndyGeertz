@@ -3,25 +3,24 @@
     position: relative;
     bottom: 0%; 
     min-height: 100vh;
-    width: 160vw;
-    border-radius: 100% 100% 0 0;
+    width: 130vw;
+    border-radius: 50% 50% 0 0;
     position: relative;
-    left: -30vw; 
+    left: -20vw; 
     overflow: hidden;
 }
 .bg{
     width: 100vw;
-    margin-left: 30vw;
-    background-image: url('https://images.unsplash.com/photo-1559065188-2537766d864b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=634&q=80');
-    background-size: 100% 100%;
+    margin-left: 20vw;
+    background-image: url('https://images.unsplash.com/photo-1528826660993-a6ce37b5d5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1323&q=80');
+    background-size: 100% 100% ;
     background-repeat: no-repeat;
+    padding-top: 2vh;
 }
 .contact{
-    
-    /* background: rgb(185,211,219);
-    background: linear-gradient(90deg, rgba(185,211,219,1) 0%, rgba(58,92,118,1) 99%); */
     width: 70vw;
     margin-left: 10vw;
+    margin-top: 0;
     min-height: 100vh;
 }
 
@@ -40,15 +39,15 @@
     padding: 5px;
 }
 a { 
-    color: rgb(17, 58, 192);
+    color: gold;
     font-weight: 500;
-    text-shadow: black 1px 1px;
+    text-shadow: rgb(86, 69, 66) .8px .8px;
     text-decoration: underline;
-    font-size: 22px;
+    font-size: 1.5em;
   }
 a:hover{
     color: rgb(0, 132, 255);
-    font-size: 28px;
+    font-size: 3em;
 }
 
 h3{
@@ -56,16 +55,13 @@ h3{
 }
 .cutoff{
     margin-top: 10vh;
-    width: 100vw;
+ 
     overflow: hidden;
 }
-.sat{
-    width: 10vw;
-    height: 10vw;
-    position: relative;
-    left: 40%;
-    top: 30%;
+.contactCard{
+    margin-bottom: 5%;
 }
+
 
 @media screen and (max-width: 575px) {
     .bottom {
@@ -87,7 +83,22 @@ h3{
   .contactMe{
     margin: 0;
     margin-top: -5vh ;
-}
+    }
+    .bg{
+        background-size: auto 100%;
+    }
+    a{
+        font-size: x-large;
+    }
+    .curve{
+        width: 250vw;
+        position: relative;
+        left:-80%;
+        border-style: solid;
+    }
+    .bg{
+        margin-left: 80vw;
+    }
 }
 
 

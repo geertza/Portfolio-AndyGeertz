@@ -82,19 +82,19 @@ class Contact extends React.Component {
                 
                     <div className="contact " >
                         <br />
-                        <h1 style={{textAlign:'center',color:'gold'}}>Contact</h1>
-                        <h2 style={{textAlign:'center',color:'gold'}}>Feedback is always appreciated!</h2>
+                        <h2 style={{textAlign:'center',color:'gold',fontSize:'xxx-large'}}>Contact</h2>
+                        <h4 style={{textAlign:'center',color:'gold'}}>Feedback is always appreciated!</h4>
                         <Row>
                             <Col sm={6} className="contactMe"  >
                             
                                 <br /><br />
-                                <h3 >Phone:</h3>
+                                
                                 <a href="tel:1-406-539-1218">1-(406)539-1218</a>
                                 <br /><br />
-                                <h3>Email:</h3>
+                                
                                 <a href="mailto:webmaster@example.com">Geertza@gmail.com</a>
                             </Col>
-                            <Col sm={6} >
+                            <Col sm={6} className='contactCard'>
                                 <Form className='contactForm'
                                  onSubmit={this.handleSubmit}
                                 >

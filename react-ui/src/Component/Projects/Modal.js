@@ -98,11 +98,11 @@ class MyVerticallyCenteredModal extends React.Component {
 
             <Row>
                 <Col>
-                    <h5>Basic Discription</h5>
+                    <h5>Basic Description</h5>
                     <p style={{color:'white'}}>
                     {this.state.displayP1}
                     </p>
-                    <h5>Technical Discription</h5>
+                    <h5>Technical Description</h5>
                     <p style={{color:'white'}}>
                        {this.state.displayP2}
                     </p>

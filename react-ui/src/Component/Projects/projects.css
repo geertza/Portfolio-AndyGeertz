@@ -22,7 +22,8 @@ body{
     background-image: url('../../visuals/deathStar.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    text-shadow: black 1px 1px;
+    text-shadow: rgb(86, 69, 66) .8px .8px;
+    color: gold;
 }
 
 .proImage{
