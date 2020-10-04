@@ -21,14 +21,14 @@ h5{
     font-size: 20px;
     margin: 2px;
 }
-h3{
-    font-size: 2vw;
-    line-height: 60%;
-    z-index: 2;
-}
-h4{
+
+h4,h3,h5{
     color: rgb(220, 191, 26);
     text-shadow: rgb(86, 69, 66) .8px .8px;
+    
+}
+h4{
+ line-height: 90%    
 }
 /* //////////fonts */
 @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
@@ -49,7 +49,7 @@ h4{
     z-index: 9999;
     width: 100vw;
     background: rgb(34, 32, 32);
-    background-image: url(./visuals/clouds4.png);
+    background-image: url(./visuals/clouds4.webp);
     background-size: 80% 80%;
     max-height: 20vh;
 }
@@ -104,10 +104,9 @@ h4{
 /////////////////////////projects
 //////////////////////////////////////// */
 .projects{
-    background-image: url('./visuals/sun.png');
+    background-image: url('./visuals/sun.webp');
     background-size:  contain;
     background-repeat: no-repeat;
-    
     overflow: visible;
 }
 *{
@@ -122,7 +121,7 @@ h4{
     line-height: 20vw;
     padding: 0;
     text-align: center;
-    background-image: url('./visuals/deathStar.png');
+    background-image: url('./visuals/deathStar.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-shadow: rgb(86, 69, 66) .8px .8px;
@@ -185,7 +184,7 @@ h4{
 margin: 5% 15% 0 15%;
 }
 .sloshed{
-    background-image: url('./visuals/wood.png');
+    background-image: url('./visuals/wood.webp');
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -207,7 +206,7 @@ font-family: stardos stencil;
 }
 /* /////////////////burger */
 .burger{
-    background-image: url('./visuals/marble.jpg');
+    background-image: url('./visuals/marble.webp');
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -234,7 +233,7 @@ font-family: stardos stencil;
 
 /* /////////////////emp//////// */
 .emp{
-    background-image: url('./visuals/cave.png');
+    background-image: url('./visuals/cave.webp');
     border-style: solid;
     border-width: 2px;
     border-color: black;

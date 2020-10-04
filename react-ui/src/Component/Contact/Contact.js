@@ -76,22 +76,17 @@ class Contact extends React.Component {
   render() {
       return (
         <div className='cutoff'>
-           
-            <div className='curve' >
+           <div className='curve' >
                 <div className='bg'>
-                
-                    <div className="contact " >
+                <div className="contact " >
                         <br />
                         <h2 style={{textAlign:'center',color:'gold',fontSize:'xxx-large'}}>Contact</h2>
-                        <h4 style={{textAlign:'center',color:'gold'}}>Feedback is always appreciated!</h4>
+                        <h5 style={{textAlign:'center',color:'gold'}}>Feedback is always appreciated!</h5>
                         <Row>
                             <Col sm={6} className="contactMe"  >
-                            
-                                <br /><br />
-                                
+                            <br /><br />
                                 <a href="tel:1-406-539-1218">1-(406)539-1218</a>
                                 <br /><br />
-                                
                                 <a href="mailto:webmaster@example.com">Geertza@gmail.com</a>
                             </Col>
                             <Col sm={6} className='contactCard'>
@@ -99,12 +94,12 @@ class Contact extends React.Component {
                                  onSubmit={this.handleSubmit}
                                 >
                                 <Form.Row>
-                                    <Form.Group   as={Col} controlId="formGridName" className='mr-auto'>
+                                    <Form.Group   as={Col} controlId="formGridfirstName" className='mr-auto'>
                                         <Form.Label style={{color:'gold'}} > First Name</Form.Label>
                                         <Form.Control placeholder="John" onChange={this.onHandleChange} name='fName' />
                                     </Form.Group>
                                     
-                                    <Form.Group  as={Col} controlId="formGridName"   className='mr-auto'>
+                                    <Form.Group  as={Col} controlId="formGridLastName"   className='mr-auto'>
                                         <Form.Label style={{color:'gold'}}> Last Name</Form.Label>
                                         <Form.Control   placeholder="Smith" name='lName' onChange={this.onHandleChange}/>
                                     </Form.Group>
@@ -117,12 +112,12 @@ class Contact extends React.Component {
                                     </Form.Group>
                                 </Form.Row>
                                 <Form.Row>
-                                    <Form.Group as={Col} controlId="formGridEmail"  className='mr-auto'>
+                                    <Form.Group as={Col} controlId="formGridPhone"  className='mr-auto'>
                                         <Form.Label style={{color:'gold'}}>Phone #</Form.Label>
                                         <Form.Control type='tel' placeholder='(000)000-0000'  onChange={this.onHandleChange} name='phone'/>
                                     </Form.Group>
 
-                                    <Form.Group as={Col} controlId="formGridEmail">
+                                    <Form.Group as={Col} controlId="formGridExt">
                                         <Form.Label style={{color:'gold'}}>Ext</Form.Label>
                                         <Form.Control type="text" onChange={this.onHandleChange} name='ext'/>
                                     </Form.Group>
@@ -140,7 +135,7 @@ class Contact extends React.Component {
                                              onChange={this.onHandleChange}
                                             />
                                     </InputGroup  >
-                                    <Button variant="secondary" type="submit" style={{width:'100%',color:'gold'}} >
+                                    <Button variant="secondary" type="submit" style={{width:'100%',color:'gold',textShadow:'black .8px .8px',backgroundColor:'black',fontWeight:'600',fontSize:'2.8vw'}} >
                                         Submit
                                     </Button>
                                 </Form>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import avatar from '../../visuals/avatar5.png'
+import avatar from '../../visuals/avatar5.webp'
 
 export default function about() {
   
@@ -15,7 +15,7 @@ export default function about() {
               <div className='intro'>
               <img src={avatar}  alt=''className='avatar'/>
               
-              <h4 className='aboutText'>Currently I'm an aspiring web-developer fresh out of fullstack bootcamp. I've always had a fixation for unravaling technical issues, so it comes natural for me to pursue a career coding. Currently seeking a team to help develop my skills, while creating amazing websites. Is your team the one I seek? </h4>
+              <h3 className='aboutText'>Currently I'm an aspiring web-developer fresh out of fullstack bootcamp. I've always had a fixation for unravaling technical issues, so it comes natural for me to pursue a career coding. Currently seeking a team to help develop my skills, while creating amazing websites. Is your team the one I seek? </h3>
               </div>
               </div>  
               </div></div></div>
