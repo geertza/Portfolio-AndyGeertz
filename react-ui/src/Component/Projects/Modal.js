@@ -1,7 +1,7 @@
 import React from 'react';
 import {Modal, Button, Col,Row} from 'react-bootstrap';
 import projectInfo from "./ProjectInfo"
-import "../../flicker.css"
+
 
 
 

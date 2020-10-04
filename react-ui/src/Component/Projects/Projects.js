@@ -1,13 +1,12 @@
 import React from 'react';
-import {Figure, Button} from 'react-bootstrap';
-import FigureCaption from 'react-bootstrap/FigureCaption'
+import {Button} from 'react-bootstrap';
+
 
 
 import MyVerticallyCenteredModal from './Modal'
 
 //---------images------------
 import Nerd from '../../visuals/NVcrest.png'
-import Sloshed from '../../visuals/sloshed.png'
 import burgerIcon from '../../visuals/burgerIcon.png'
 
 
@@ -67,23 +66,20 @@ function Projects() {
                                 Take a look
                             </Button>
                          </div>
+                         {/* -------------Emp---------------------- */}
+                         <div className='ProCluster emp ' >
+                            <div className='clusterTitle empTitle'  >
+                            <div id='emp' >The Emp List</div>
+                            <div id='emp'  >(Api Employee Directory)</div>
+                            </div>
+                            <Button variant="warning" className='probutton empButton'
+                                onClick={() =>{ 
+                                setTitle('emp')
+                                setModalShow(true)}}>
+                                Take a look
+                            </Button>
+                         </div>
 
-
-                       
-                          
-                        {/* -----------------burger-------------- */}
-                        {/* <Figure className='ProCluster' >
-                            <img src={Burger} alt="" className='proImage ' />
-                            <FigureCaption>
-                                <h4 className="tShadow">Burger Time 2</h4>
-                                <Button variant="warning" className='probutton'
-                                    onClick={() =>{ 
-                                    setTitle('burger')
-                                    setModalShow(true)}}>
-                                    Take a look
-                                </Button>
-                            </FigureCaption>
-                        </Figure> */}
                      
                     </div>
                    

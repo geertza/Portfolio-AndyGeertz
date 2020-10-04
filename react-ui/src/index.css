@@ -145,7 +145,6 @@ h4{
 }
 .probutton{
     border-radius: 10px;
-   
     width: 70%;
     background-color: rgba(78, 75, 75, 0.844);
     font-weight: 400;
@@ -206,6 +205,7 @@ font-family: stardos stencil;
 .sloshedButton{
     margin: 3% 0% 0 15%;
 }
+/* /////////////////burger */
 .burger{
     background-image: url('./visuals/marble.jpg');
     border-style: solid;
@@ -230,6 +230,30 @@ font-family: stardos stencil;
 .burgerImage{
     width: 100%;
     margin: 0;
+}
+
+/* /////////////////emp//////// */
+.emp{
+    background-image: url('./visuals/cave.png');
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgba(41, 12, 12, 0.972);
+}
+.empTitle{
+    margin-top: 10%;
+    width: 100%;
+
+}
+#emp{
+font-size: 2.1vw;
+color:green ;
+text-shadow: rgb(12, 106, 50) 1px 1px;
+font-weight: 900;
+/* font-family: stardos stencil; */
+}
+.empButton{
+    margin: 10% 0% 0 15%;
 }
 
 /* /////////////////////////////////////////////////////   //////
@@ -263,11 +287,9 @@ font-family: stardos stencil;
 
 
 .contactMe{
-    /* background-image: url('./visuals/sat.png'); */
-    background-size: 60% 60%;
-    background-repeat: no-repeat;
     height: 60vh;
     margin-top: 10vh;
+    text-align: center;
 }
 .contactForm{
     width: 100%;
@@ -276,14 +298,22 @@ font-family: stardos stencil;
     padding: 5px;
 }
 a { 
+    text-align: center;
     font-weight: 500;
-    text-shadow: rgb(86, 69, 66) .8px .8px;
+    color: gold;
+    text-shadow: black .8px .8px 3px;
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: 4vw;
+    background-color: rgba(0, 0, 0, 0.837);
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-style: groove;
+    border-width: 4px;
   }
 a:hover{
     color: rgb(0, 132, 255);
-    font-size: 3em;
+    
 }
 .cutoff{
     margin-top: 10vh;
@@ -309,7 +339,17 @@ a:hover{
         .ProCluster {
             width: 40vw;
             height: 40vw;
-        }     
+        }
+        #emp, #sloshed{
+            font-size: 4vw;
+           
+        }
+        .empTitle, .sloshedTitle{
+             margin-top: 20%;
+        }
+        .sloshedTitle{
+            margin-bottom: 20%;
+        }    
     }
 
 
@@ -325,18 +365,17 @@ a:hover{
   
   .contactForm{
       margin: 0;
-      margin-top: -15vh ;
+      margin-top: 10px ;
   }
   .contactMe{
-    margin: 0;
+    
     margin-top: -5vh ;
+    height: auto;
     }
     .bg{
         background-size: auto 100%;
     }
-    a{
-        font-size: x-large;
-    }
+    
     .curve{
         width: 250vw;
         position: relative;
@@ -346,6 +385,10 @@ a:hover{
     .bg{
         margin-left: 80vw;
     }
+    .a{
+        font-size: 28px;
+    }
+    
 }
 
 

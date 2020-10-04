@@ -29,6 +29,15 @@
       lang:['html','css','js','node','mysql','handlebars'],
     demo: 'https://burger-time-2.herokuapp.com/',
     git:'https://github.com/geertza/Burger-Time-part-2'
+    },
+    emp:{
+      title:"The Emp List",
+      p1:"Display list of employees with basic info. ",
+      p2:"Create a employee directory with React, from basic api request. Break up  application's UI into components, manage component state, and respond to user events.",
+      img:'emp.png',
+      lang:['html','css','js','node','react'],
+    demo: 'https://imp-list.herokuapp.com//',
+    git:'https://github.com/geertza/emp-directory.git'
     }
   }
 

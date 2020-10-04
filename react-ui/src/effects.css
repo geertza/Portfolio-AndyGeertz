@@ -1,27 +1,4 @@
-.flicker{
-    animation: flicker 4.0s linear infinite;
-    
 
---neon-border-color: rgb(11, 9, 20);
-}
-
-@keyframes flicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-
-        box-shadow:
-           0 0 .5rem rgb(20, 32, 194),
-           inset 0 0 .5rem rgb(80, 177, 226),
-           0 0 2rem var(--neon-border-color),
-           inset 0 0 2rem var(--neon-border-color),
-           0 0 4rem var(--neon-border-color),
-           inset 0 0 4rem var(--neon-border-color);        
-        }
-        
-        20%, 24%, 55% {        
-        text-shadow: none;
-        box-shadow: none;
-        }    
-        }
     /* -----------stars and clouds effect------------ */
 @keyframes move-twink-back {
     from {background-position:0 0;}
