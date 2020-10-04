@@ -1,9 +1,6 @@
 import React from 'react';
 
-import "./intro.css";
 import avatar from '../../visuals/avatar5.png'
-
-
 
 export default function about() {
   

@@ -2,8 +2,6 @@ import React  from 'react';
 import {Nav,Navbar} from 'react-bootstrap';
 
 
-import './header.css'
-// import 'bootstrap/dist/css/bootstrap.css'
 
 import Logo from '../../visuals/sunLogo.png';
 import GitHub from '../../visuals/GitHub-Mark-64px.png'

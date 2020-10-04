@@ -2,7 +2,7 @@
 import React from 'react';
 
 import {Form,Row,Col,InputGroup,FormControl,Button} from 'react-bootstrap'
-import './contact.css'
+
 
 class Contact extends React.Component {
   constructor() {

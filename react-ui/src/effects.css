@@ -1,0 +1,79 @@
+.flicker{
+    animation: flicker 4.0s linear infinite;
+    
+
+--neon-border-color: rgb(11, 9, 20);
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow:
+           0 0 .5rem rgb(20, 32, 194),
+           inset 0 0 .5rem rgb(80, 177, 226),
+           0 0 2rem var(--neon-border-color),
+           inset 0 0 2rem var(--neon-border-color),
+           0 0 4rem var(--neon-border-color),
+           inset 0 0 4rem var(--neon-border-color);        
+        }
+        
+        20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+        }    
+        }
+    /* -----------stars and clouds effect------------ */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+    .twinkling{
+        background:transparent url(./visuals/twinkling.png) repeat top center;
+        z-index:1;
+        -moz-animation:move-twink-back 200s linear infinite;
+        -ms-animation:move-twink-back 200s linear infinite;
+        -o-animation:move-twink-back 200s linear infinite;
+        -webkit-animation:move-twink-back 200s linear infinite;
+        animation:move-twink-back 200s linear infinite;
+      }
+    .clouds{
+        background: url(./visuals/clouds6wave.png) repeat top center;
+        background-size: 100% 100%;
+        background-repeat: repeat-x;
+        height: 110%;
+        z-index:3;
+      -moz-animation:move-clouds-back 1200s linear infinite;
+      -ms-animation:move-clouds-back 1200s linear infinite;
+      -o-animation:move-clouds-back 1200s linear infinite;
+      -webkit-animation:move-clouds-back 1200s linear infinite;
+      animation:move-clouds-back 1200s linear infinite;
+    }

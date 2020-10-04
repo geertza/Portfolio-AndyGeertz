@@ -61,8 +61,8 @@ class MyVerticallyCenteredModal extends React.Component {
         }}
          closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            <h1
-                className="flicker"
+            <h2
+               
                style={{
                 textAlign:"center",
                 fontSize:"45px",
@@ -71,7 +71,7 @@ class MyVerticallyCenteredModal extends React.Component {
                 position:"relative",
                 left:'-10%'
             }}
-            >{this.state.displayTitle}</h1>
+            >{this.state.displayTitle}</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body

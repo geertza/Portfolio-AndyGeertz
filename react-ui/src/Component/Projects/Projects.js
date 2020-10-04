@@ -1,17 +1,17 @@
 import React from 'react';
 import {Figure, Button} from 'react-bootstrap';
 import FigureCaption from 'react-bootstrap/FigureCaption'
-import './projects.css'
+
 
 import MyVerticallyCenteredModal from './Modal'
 
 //---------images------------
-import Nerd from '../../visuals/nerdverse.png'
+import Nerd from '../../visuals/NVcrest.png'
 import Sloshed from '../../visuals/sloshed.png'
-import Burger from '../../visuals/burger-time.png'
+import burgerIcon from '../../visuals/burgerIcon.png'
 
 
-function Intro() {
+function Projects() {
     const [modalShow, setModalShow] = React.useState(false);
     const [title, setTitle] = React.useState('nerd');
 
@@ -29,34 +29,50 @@ function Intro() {
                     <br />
                     <div className='proGrid '>
                         {/* ---------------------nerdverse------------------- */}
-                        <Figure className='ProCluster' >
-                            <img src={Nerd} alt="" className='proImage ' />
-                            <FigureCaption>
-                                <h4 >Nerd Verse</h4>
-                                <Button variant="warning" className='probutton'
-                                    onClick={() =>{ 
-                                    setTitle('nerdverse')
-                                    setModalShow(true)}}>
-                                    Take a look
-                                </Button>
-                            </FigureCaption>
-                        </Figure>
-                           {/* ----------------------Sloshed----------------                  */}
-                           <Figure className='ProCluster' >
-                            <img src={Sloshed} alt="" className='proImage ' />
-                            <FigureCaption>
-                                <h4 className="tShadow">The Sloshed Guide</h4>
-                               
-                                <Button variant="warning" className='probutton'
-                                    onClick={() =>{ 
-                                    setTitle('sloshed')
-                                    setModalShow(true)}}>
-                                    Take a look
-                                </Button>
-                            </FigureCaption>
-                        </Figure>
+                        <div className='ProCluster nerd ' >
+                            <div className='clusterTitle nerdTitle'  >
+                            <h3 >Nerd Verse </h3>
+                            <h3  >(Trivia Game)</h3>
+                            </div>
+                            <img src={Nerd} alt="" className='proImage nerdImage' />
+                            <Button variant="warning" className='probutton nerdButton'
+                                onClick={() =>{ 
+                                setTitle('nerdverse')
+                                setModalShow(true)}}>
+                                Take a look
+                            </Button>
+                         </div>
+
+                         {/* -------------sloshed--------- */}
+                         <div className='ProCluster sloshed ' >
+                            <div className='clusterTitle sloshedTitle'  >
+                            <div id='sloshed' >The Sloshed Guide</div>
+                            <div id='sloshed'  >(Pub Guide)</div>
+                            </div>
+                            <Button variant="warning" className='probutton sloshedButton'
+                                onClick={() =>{ 
+                                setTitle('sloshed')
+                                setModalShow(true)}}>
+                                Take a look
+                            </Button>
+                         </div>
+                         {/* ---------burger------------------------- */}
+                         <div className='ProCluster burger ' >
+                           
+                            <img src={burgerIcon} alt="" className='proImage burgerImage' />
+                            <Button variant="warning" className='probutton burgerButton'
+                                onClick={() =>{ 
+                                setTitle('burger')
+                                setModalShow(true)}}>
+                                Take a look
+                            </Button>
+                         </div>
+
+
+                       
+                          
                         {/* -----------------burger-------------- */}
-                        <Figure className='ProCluster' >
+                        {/* <Figure className='ProCluster' >
                             <img src={Burger} alt="" className='proImage ' />
                             <FigureCaption>
                                 <h4 className="tShadow">Burger Time 2</h4>
@@ -67,7 +83,7 @@ function Intro() {
                                     Take a look
                                 </Button>
                             </FigureCaption>
-                        </Figure>
+                        </Figure> */}
                      
                     </div>
                    
@@ -78,4 +94,4 @@ function Intro() {
     
 }
 
-export default Intro;
+export default Projects;
