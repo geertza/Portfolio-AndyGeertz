@@ -24,8 +24,8 @@ function Projects() {
                 {/* ---------------------nerdverse------------------- */}
                 <div className='ProCluster nerd ' >
                     <div className='clusterTitle nerdTitle'  >
-                    <h4 >Nerd Verse </h4>
-                    <h4  >(Trivia Game)</h4>
+                    <div id='nerd' >Nerd Verse </div>
+                    <div id='nerd'  >(Trivia Game)</div>
                     </div>
                     <img src={Nerd} alt="" className='proImage nerdImage' />
                     <Button variant="warning" className='probutton nerdButton'
