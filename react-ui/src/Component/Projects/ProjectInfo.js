@@ -10,7 +10,7 @@
     img:'nerdverse.webp',
     lang: ['html','css','js'],
     demo: 'https://geertza.github.io/NerdVerse/',
-    git:'https://github.com/geertza/NerdVerse'
+    git:'https://github.com/geertza/the-sloshed-guide'
     },
     sloshed:{
       title:"The Sloshed Guide",
