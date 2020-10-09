@@ -5,25 +5,32 @@
 color: gold;
 }
 
+
 body{
-    background-image: url('./visuals/stars2.webp');
-    background-color:black;
+    background-color: black;
 }
-h2{
+h2,h1{
     font-family: 'Grandstander', cursive;
     text-shadow: rgb(86, 69, 66) .8px .8px;
     color: gold;
+    
 }
-h1, .aboutText {
-    font-weight: 300;
+
+h1{
+font-size: 5vw;
 }
-h5{
-    font-size: 20px;
-    margin: 2px;
+h2{
+   font-size: 7vw; 
+}
+
+
+h3{
+    font-size: 3vw;
+    margin: 10px;
 }
 
 h4,h3,h5{
-    color: rgb(220, 191, 26);
+    color: gold;
     text-shadow: rgb(86, 69, 66) .8px .8px;
     
 }
@@ -37,96 +44,95 @@ h4{
 /////////////////// header
 //////////////////////////////////////////// */
 .logo {
-	height: 60px;
+	height: 15vh;
 }
 .icon{
-    height: 50px;
+    height: 5vh;
     background-color: darkgrey;
     border-radius: 50%;
    }
 .navbar {
-	position: fixed;
+    position: fixed;
+    top: 1%;
     z-index: 9999;
     width: 100vw;
     background: rgb(34, 32, 32);
     background-image: url(./visuals/clouds4.webp);
     background-size: 80% 80%;
-    max-height: 20vh;
+    height: 12vh;
 }
 
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////// intro 
 /////////////////////////////////////////// */
+
+
 .about {
-    background: rgba(105, 105, 105, 0.226);
     text-align: center;
-     position: relative;
-    top: 22vh; 
-    width: 80vw;
-    max-height: 75vh;
-    margin: 0 10vw;
+    width: 70vw;
+    margin: 10vh 15vw 0 15vw;
     border-radius: 15px;
     padding: 0 10px;
-    overflow: scroll;
-   
+   /* background-color: rgb(15, 69, 93); */
 }
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+.aboutText{
+    background-color: rgb(20, 49, 194);
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 5vh;
 }
+
 .avatar{
-    height: 40vh;
+    height: 30vw;
   float: left;
   padding: 0;
-  border: 0;
+ 
 }
-.intro{
-    display: inline-block;
-}
-.stars, .twinkling, .clouds {
-  position: relative;;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
+.meet{
+    width: 36vw;
+    margin: 0% 20vw;
+    font-size: 4vw;
+font-weight:500;
+background-color:rgb(84, 73, 73);
 }
 .clouds{
-    height: auto;
-    position: absolute;
-    top: 0%;
+      color: rgba(84, 73, 73, 0.904);
+    background: url(./visuals/cloud3.png) repeat top center blue;
+    /* background-size: 100% 100%; */
+    background-repeat: inherit;
+    padding: 5% 0 5% 0;
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
 }
-.stars {
-    background:#000 url(./visuals/stars2.webp) repeat top center;
-    z-index:0;
-  }
 
 /* ///////////////////////////////////////////////////////////
 /////////////////////////projects
 //////////////////////////////////////// */
 .projects{
-    background-image: url('./visuals/sun.webp');
-    background-size:  contain;
+    background-image: url('./visuals/deathStar.webp');
+    background-size:  50vh 50vh;
     background-repeat: no-repeat;
     overflow: visible;
+    min-height: 60vh;
 }
-*{
-    color: rgb(146, 146, 30);
-    font-weight: 400;
-    
+
+.proBg{
+    background-image: url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=620&q=80');
+    background-color:black;
+    background-repeat: repeat;
+    padding: 5% 0 28vh 0;
 }
-.Protitle{
-    width: 20vw;
-    height: 20vw;
-    margin: 0vh 33vw 0 33vw;
-    line-height: 20vw;
-    padding: 0;
+
+.proTitle{
+    margin: 1vh 0% 0 0%;
     text-align: center;
-    background-image: url('./visuals/deathStar.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-shadow: rgb(86, 69, 66) .8px .8px;
-    color: gold;
+    font-size: 10vw;
 }
+    
+
 .proImage{
     width: 60%;
     height: auto;
@@ -152,44 +158,39 @@ h4{
     }
 .proGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     }
 .ProCluster{
-   
-    /* border-width: 4%; */
-    /* border-color: rgba(30, 30, 65, 0.973); */
-    /* padding: 5%; */
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     width: 20vw;
     height: 20vw;
-    margin: 10%;
+    margin: 2%;
     margin-left: 2vw;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 /* ///////////////cluster planets */
 #nerd{
     font-size: 2.0vw;
+    margin: -10% 0 5px 0;
 }
 .nerd{
     /* background-image: url('./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg'); */
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+   
     background-color: rgba(41, 12, 12, 0.972);
 }
 .nerdButton{
-     margin: -3% 0% 0 15%;
+     margin: -8% 0% 0 15%;
 }
 .nerdTitle{
 margin: 5% 15% 0 15%;
 }
 .sloshed{
     background-image: url('./visuals/wood.webp');
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     background-color: rgba(41, 12, 12, 0.972);
 }
 .sloshedTitle{
@@ -235,10 +236,6 @@ font-family: stardos stencil;
 
 /* /////////////////emp//////// */
 .emp{
-    background-image: url('./visuals/cave.webp');
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
     background-color: rgba(41, 12, 12, 0.972);
 }
 .empTitle{
@@ -273,15 +270,16 @@ font-weight: 900;
 .bg{
     width: 100vw;
     margin-left: 20vw;
-    background-image: url('https://images.unsplash.com/photo-1528826660993-a6ce37b5d5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1323&q=80');
+    background-color: rgb(16, 27, 47);
+    background-image: url(./visuals//marble.webp);
     background-size: 100% 100% ;
     background-repeat: no-repeat;
-    padding-top: 2vh;
+    padding-top: 5vh;
 }
 .contact{
     width: 70vw;
     margin-left: 10vw;
-    margin-top: 0;
+    
     /* min-height: 100vh; */
 }
 
@@ -294,7 +292,7 @@ font-weight: 900;
 .contactForm{
     width: 100%;
     margin: 0 20%;
-    background-color: rgba(5, 5, 3, 0.623);
+    background-color: rgb(100, 94, 94);
     padding: 5px;
 }
 a { 
@@ -304,7 +302,7 @@ a {
     text-shadow: black .8px .8px 3px;
     text-decoration: underline;
     font-size: 4vw;
-    background-color: rgba(0, 0, 0, 0.837);
+    background-color: rgb(22, 36, 128);
     border-radius: 10px;
     padding: 4px;
     margin-bottom: 10px;
@@ -316,7 +314,7 @@ a:hover{
     
 }
 .cutoff{
-    margin-top: 10vh;
+    margin-top: -25vh;
     overflow: hidden;
 }
 .contactCard{
@@ -354,6 +352,9 @@ a:hover{
 
 
 @media screen and (max-width: 575px) {
+    .navbar{
+        height: 5vh;
+    }
     .bottom {
         width: 300%;
         left: -80%;
@@ -387,6 +388,45 @@ a:hover{
     }
     .a{
         font-size: 28px;
+    }
+    .hello{
+        font-size: 4vh;
+    }
+    h2{
+       font-size: 10vw; 
+    }
+    h3{
+        font-size: 4vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+    
+    .logo{
+        height: 8vh;
+    }
+    .icon{
+        height: 3vh;
+        /* width: 4vh; */
+        display: list-item;
+    }
+    .aboutText{
+        margin-top: 0;
+        font-size: 3vw;
+    }
+   
+   
+    .projects{
+        background-size: 80vw 80vw;
+    }
+    .about{
+        margin-top: 13%;
+    }
+    .avatar{
+        height: 45vw;
+    }
+    .clouds{
+        padding-bottom: 17%;
     }
     
 }

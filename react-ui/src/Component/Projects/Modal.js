@@ -18,7 +18,7 @@ class MyVerticallyCenteredModal extends React.Component {
       lang:[],
       git:'',
       demo:'',
-      img:'sunLogo.webp'
+      img:'sunLogo.png'
     };
   }
   

@@ -80,14 +80,14 @@ class Contact extends React.Component {
                 <div className='bg'>
                 <div className="contact " >
                         <br />
-                        <h2 style={{textAlign:'center',color:'gold',fontSize:'xxx-large'}}>Contact</h2>
-                        <h5 style={{textAlign:'center',color:'gold'}}>Feedback is always appreciated!</h5>
+                        <h2 style={{textAlign:'center'}}>Contact</h2>
+                        <h3 style={{textAlign:'center'}}>Feedback is always appreciated!</h3>
                         <Row>
                             <Col sm={6} className="contactMe"  >
                             <br /><br />
-                                <a href="tel:1-406-539-1218">1-(406)539-1218</a>
+                                <a style={{backgroundColor:"rgb(100, 94, 94)"}} href="tel:1-406-539-1218">1-(406)539-1218</a>
                                 <br /><br />
-                                <a href="mailto:webmaster@example.com">Geertza@gmail.com</a>
+                                <a style={{backgroundColor:"rgb(100, 94, 94)"}} href="mailto:webmaster@example.com">Geertza@gmail.com</a>
                             </Col>
                             <Col sm={6} className='contactCard'>
                                 <Form className='contactForm'
