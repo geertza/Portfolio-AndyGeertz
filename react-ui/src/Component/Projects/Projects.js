@@ -3,8 +3,6 @@ import {Button} from 'react-bootstrap';
 import MyVerticallyCenteredModal from './Modal'
 
 //---------images------------
-import Nerd from '../../visuals/NVcrest.webp'
-import burgerIcon from '../../visuals/burgerIcon.webp'
 
 function Projects() {
     // -------------states for models---------------
@@ -13,22 +11,18 @@ function Projects() {
      return (
         <div className='proBg'>
             <div className='projects '> 
-                <h2  className='proTitle ' >Projects</h2>
+                <h3  className='proTitle ' >Projects</h3>
                 {/* feed modal props */}
                 <MyVerticallyCenteredModal
                     title={title}
                     show={modalShow}
                     onHide={() => 
                     setModalShow(false)} />
-                <br />
                 <div className='proGrid '>
                     {/* ---------------------nerdverse------------------- */}
-                    <div className='ProCluster nerd ' >
-                        <div className='clusterTitle nerdTitle'  >
-                        <div id='nerd' >Nerd Verse </div>
-                        <div id='nerd'  >(Trivia Game)</div>
-                        </div>
-                        <img src={Nerd} alt="" className='proImage nerdImage' />
+                    <div className='ProCluster' >
+                        <div className='clusterTitle' >Nerd Verse (Trivia Game)</div>
+                        <div className='proImage nerd'/>
                         <Button variant="warning" className='probutton nerdButton'
                             onClick={() =>{ 
                             setTitle('nerdverse')
@@ -38,10 +32,10 @@ function Projects() {
                         </div>
 
                         {/* -------------sloshed--------- */}
-                        <div className='ProCluster sloshed ' >
-                        <div className='clusterTitle sloshedTitle'  >
-                        <div id='sloshed' >The Sloshed Guide</div>
-                        <div id='sloshed'  >(Pub Guide)</div>
+                        <div className='ProCluster pcRight' >
+                        <div className='clusterTitle' >(Pub Locator App)</div>
+                        <div className='proImage sloshed'>
+                        <div id='sloshed' >The Sloshed Guide</div> 
                         </div>
                         <Button variant="warning" className='probutton sloshedButton'
                             onClick={() =>{ 
@@ -51,10 +45,10 @@ function Projects() {
                         </Button>
                         </div>
                         {/* ---------burger------------------------- */}
-                        <div className='ProCluster burger ' >
-                        
-                        <img src={burgerIcon} alt="" className='proImage burgerImage' />
-                        <Button variant="warning" className='probutton burgerButton'
+                        <div className='ProCluster  ' >
+                        <div className='clusterTitle' >(Make a burger app)</div>
+                        <div className='proImage burger'/>
+                        <Button variant="warning" className='probutton '
                             onClick={() =>{ 
                             setTitle('burger')
                             setModalShow(true)}}>
@@ -62,12 +56,12 @@ function Projects() {
                         </Button>
                         </div>
                         {/* -------------Emp---------------------- */}
-                        <div className='ProCluster emp ' >
-                        <div className='clusterTitle empTitle'  >
-                        <h4 id='emp' >The Emp List</h4>
-                        <h4 id='emp'  >(Api Employee Directory)</h4>
+                        <div className='ProCluster pcRight' >
+                        <div className='clusterTitle' >(Employee directory )</div>
+                        <div className='proImage emp'> 
+                        <div id='emp'>Emp List</div>
                         </div>
-                        <Button variant="warning" className='probutton empButton'
+                        <Button variant="warning" className='probutton '
                             onClick={() =>{ 
                             setTitle('emp')
                             setModalShow(true)}}>
@@ -75,6 +69,7 @@ function Projects() {
                         </Button>
                     </div>
                 </div>
+                
             </div>
         </div>
     )

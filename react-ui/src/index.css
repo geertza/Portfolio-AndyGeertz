@@ -5,34 +5,13 @@
 color: gold;
 }
 
-
-body{
-    background-color: black;
-}
 h2,h1{
     font-family: 'Grandstander', cursive;
     text-shadow: rgb(86, 69, 66) .8px .8px;
-    color: gold;
-    
 }
 
-h1{
-font-size: 5vw;
-}
-h2{
-   font-size: 7vw; 
-}
-
-
-h3{
-    font-size: 3vw;
-    margin: 10px;
-}
-
-h4,h3,h5{
-    color: gold;
+h4,h3{
     text-shadow: rgb(86, 69, 66) .8px .8px;
-    
 }
 h4{
  line-height: 90%    
@@ -44,395 +23,226 @@ h4{
 /////////////////// header
 //////////////////////////////////////////// */
 .logo {
-	height: 15vh;
+    height: 12vw;
+    max-height: 20vh;
+    min-height: 14vh;
 }
 .icon{
-    height: 5vh;
+    height: 7vh;
     background-color: darkgrey;
     border-radius: 50%;
    }
 .navbar {
     position: fixed;
     top: 1%;
-    z-index: 9999;
+    z-index: 9;
     width: 100vw;
-    background: rgb(34, 32, 32);
+    /* background: rgba(19, 18, 18, 0.49); */
     background-image: url(./visuals/clouds4.webp);
-    background-size: 80% 80%;
+    background-size: 130% 80%;
+    background-repeat: no-repeat;
     height: 12vh;
 }
 
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////// intro 
 /////////////////////////////////////////// */
-
-
 .about {
     text-align: center;
-    width: 70vw;
-    margin: 10vh 15vw 0 15vw;
-    border-radius: 15px;
-    padding: 0 10px;
-   /* background-color: rgb(15, 69, 93); */
+    margin: 10vh 5vw 0 20vw;
+    background-color: rgba(26, 34, 73, 0.891);
+    border-radius: 30px;
+    min-height: 35vh;
+    max-height: 60vh;
+    min-width: 60vw;
+    padding: 2%;
+}
+.hello{
+    text-align: left;
 }
 .aboutText{
-    background-color: rgb(20, 49, 194);
-    border-radius: 30px;
-    padding: 15px;
-    margin-top: 5vh;
+    text-align: right;
+    font-size: 2.5vw;
+   
 }
-
 .avatar{
-    height: 30vw;
+    height: 65vh;
   float: left;
   padding: 0;
  
 }
 .meet{
-    width: 36vw;
-    margin: 0% 20vw;
-    font-size: 4vw;
-font-weight:500;
-background-color:rgb(84, 73, 73);
+    font-size: 3vw;
 }
 .clouds{
+    height: 100vh;
       color: rgba(84, 73, 73, 0.904);
     background: url(./visuals/cloud3.png) repeat top center blue;
-    /* background-size: 100% 100%; */
-    background-repeat: inherit;
     padding: 5% 0 5% 0;
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 200s linear infinite;
 }
-
+@keyframes move-clouds-back {
+    from {background-position:10000px 0;}
+    to {background-position: 0;}
+}
 /* ///////////////////////////////////////////////////////////
 /////////////////////////projects
 //////////////////////////////////////// */
-.projects{
-    background-image: url('./visuals/deathStar.webp');
-    background-size:  50vh 50vh;
-    background-repeat: no-repeat;
-    overflow: visible;
-    min-height: 60vh;
+
+.dStar{
+position: absolute;
+left:42vw;
+top:130vh;
+width: 15vw;
+z-index: 2;
 }
 
 .proBg{
-    background-image: url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=620&q=80');
-    background-color:black;
-    background-repeat: repeat;
-    padding: 5% 0 28vh 0;
+    background-image: url(./visuals/sun.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% auto;
+    height: 115vh;
+    background-color: black;
 }
 
 .proTitle{
-    margin: 1vh 0% 0 0%;
     text-align: center;
-    font-size: 10vw;
-}
-    
-
-.proImage{
-    width: 60%;
-    height: auto;
-   border-radius: 50%;
-   /* background-color: rgba(61, 55, 55, 0.633); */
-    margin: -5% 20% 0% 20%;
+    font-size: 5vw;
+    z-index: 999;
+    color: rgb(38, 109, 209);
+    text-shadow: silver 1px 1px;
 }
 .clusterTitle{
-    /* background-color: rgba(66, 58, 58, 0.823); */
     text-align: center;
-    width: 70%;
-    
-    border-radius: 10px;
-    text-shadow:rgba(90, 78, 78, 0.551) 1px 1px   ;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 3vh;
+    /* text-shadow:silver 1px 1px; */
+    font-size: 2vw;
+    width: 25vw;
+    color: gold;
+    background-color: black;
+   
 }
+
 .probutton{
-    border-radius: 10px;
-    width: 70%;
+    border-radius:0 0 10px 10px;
+    width: 25vw;
+    height: 2.8vw;
+    line-height: .3vw;
     background-color: rgba(78, 75, 75, 0.844);
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: gold;
+    border-style: ridge;
+    border-width: 4px;
+   position: relative;
+   top: -3vh;
     }
 .proGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    margin: 0% 10% 20% 10%;
     }
-.ProCluster{
+.proImage{
     border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-width: 3%;
+    border-color: rgb(9, 86, 111);
     width: 20vw;
     height: 20vw;
-    margin: 2%;
-    margin-left: 2vw;
     border-radius: 10px;
+    background-color: rgba(15, 15, 78, 0.972); 
+}
+.ProCluster{
+    width: 20vw;
+
+}
+.pcRight{
+    margin-left: 30%;
 }
 /* ///////////////cluster planets */
-#nerd{
-    font-size: 2.0vw;
-    margin: -10% 0 5px 0;
-}
 .nerd{
-    /* background-image: url('./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg'); */
-   
-    background-color: rgba(41, 12, 12, 0.972);
-}
-.nerdButton{
-     margin: -8% 0% 0 15%;
-}
-.nerdTitle{
-margin: 5% 15% 0 15%;
+    background-image: url(./visuals/NVcrest.webp);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .sloshed{
     background-image: url('./visuals/wood.webp');
-    background-color: rgba(41, 12, 12, 0.972);
-}
-.sloshedTitle{
-    margin-top: 10%;
-    width: 100%;
-
 }
 #sloshed{
-font-size: 2.5vw;
+font-size: 3vw;
 color: black;
 font-weight: 900;
 font-family: stardos stencil;
+padding: 4vh 10%;
+text-align: center;
 }
-.sloshedButton{
-    margin: 3% 0% 0 15%;
-}
-/* /////////////////burger */
 .burger{
-    background-image: url('./visuals/marble.webp');
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    background-color: rgba(41, 12, 12, 0.972);
+    background-image: url('./visuals/burgerIcon.webp');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.burgerTitle{
-    margin-top: 10%;
-    width: 100%;
-
-}
-#burger{
-font-size: 2.5vw;
-color: black;
-font-weight: 900;
-font-family: stardos stencil;
-}
-.burgerButton{
-    margin: -50% 0% 0 15%;
-}
-.burgerImage{
-    width: 100%;
-    margin: 0;
-}
-
-/* /////////////////emp//////// */
 .emp{
-    background-color: rgba(41, 12, 12, 0.972);
-}
-.empTitle{
-    margin-top: 10%;
-    width: 100%;
-
+    background-image: url('./visuals/list.png');
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #emp{
-font-size: 2.1vw;
-color:rgb(21, 233, 21) ;
-text-shadow: rgb(115, 84, 59) 1px 1px;
-font-weight: 900;
-/* font-family: stardos stencil; */
-}
-.empButton{
-    margin: 10% 0% 0 15%;
-}
-
+    font-size: 4.5vw;
+    line-height: 90%;
+    color: green;
+    text-shadow: black 1px 3px;
+    font-weight: 900;
+    font-family: stardos stencil;
+    padding: 20% 10%;
+    text-align: center;
+    }
 /* /////////////////////////////////////////////////////   //////
 ////////////////////Contact
 /////////////////////////////////////////////////     */
-.curve{
-  
-    position: relative;
-    bottom: 0%; 
-    width: 130vw;
-    border-radius: 50% 50% 0 0;
-    position: relative;
-    left: -20vw; 
-    overflow: hidden;
-}
-.bg{
-    width: 100vw;
-    margin-left: 20vw;
-    background-color: rgb(16, 27, 47);
-    background-image: url(./visuals//marble.webp);
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
-    padding-top: 5vh;
-}
 .contact{
-    width: 70vw;
-    margin-left: 10vw;
-    
-    /* min-height: 100vh; */
+    margin-top: 2vh;
+}
+form{
+    background-color: black;
+    width: 85vw;
+    margin: 3vh 5vw;
+    font-size: 1.7vw;
+   padding: 0 4%;
 }
 
-
-.contactMe{
-    height: auto;
-    margin-top: 10vh;
-    text-align: center;
-}
-.contactForm{
-    width: 100%;
-    margin: 0 20%;
-    background-color: rgb(100, 94, 94);
+.conMe{
+    /* margin: -2vh 0; */
+    margin-left: 17vw;
+    font-size: 3vw;
+    font-weight: 500;
+    background-color: black;
+    border-style: double;
+    border-radius: 15px;
+    border-color: black;
     padding: 5px;
 }
-a { 
-    text-align: center;
-    font-weight: 500;
-    color: gold;
-    text-shadow: black .8px .8px 3px;
-    text-decoration: underline;
-    font-size: 4vw;
-    background-color: rgb(22, 36, 128);
-    border-radius: 10px;
-    padding: 4px;
-    margin-bottom: 10px;
-    border-style: groove;
-    border-width: 4px;
-  }
-a:hover{
-    color: rgb(0, 132, 255);
-    
-}
-.cutoff{
-    margin-top: -25vh;
-    overflow: hidden;
-}
-.contactCard{
-    margin-bottom: 5%;
-}
+
+
 
 
 
 /* /////////////////////////////////////////////////////////////////
 ////////////////responsive corrections
 ////////////////////////////////////////////////// */
-    @media screen and (max-width: 700px) {
-        .proGrid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 15px;
-            } 
-        .ProCluster {
-            width: 40vw;
-            height: 40vw;
-        }
-        #emp, #sloshed, #nerd{
-            font-size: 4vw;
-           
-        }
-        .empTitle, .sloshedTitle{
-             margin-top: 20%;
-        }
-        .sloshedTitle{
-            margin-bottom: 20%;
-        }    
-    }
-
-
-@media screen and (max-width: 575px) {
-    .navbar{
-        height: 5vh;
-    }
-    .bottom {
-        width: 300%;
-        left: -80%;
-    }
-    .contact{
-        margin-left: 15%;
-    }
   
-  
-  .contactForm{
-      margin: 0;
-      margin-top: 10px ;
-  }
-  .contactMe{
-    
-    margin-top: -5vh ;
-    height: auto;
-    }
-    .bg{
-        background-size: auto 100%;
-    }
-    
-    .curve{
-        width: 250vw;
-        position: relative;
-        left:-80%;
-        border-style: solid;
-    }
-    .bg{
-        margin-left: 80vw;
-    }
-    .a{
-        font-size: 28px;
-    }
-    .hello{
-        font-size: 4vh;
-    }
-    h2{
-       font-size: 10vw; 
-    }
-    h3{
-        font-size: 4vw;
-    }
-    .hello{
-        font-size: 4.5vw;
-    }
-    
-    .logo{
-        height: 8vh;
-    }
-    .icon{
-        height: 3vh;
-        /* width: 4vh; */
-        display: list-item;
-    }
-    .aboutText{
-        margin-top: 0;
-        font-size: 3vw;
-    }
-   
-   
-    .projects{
-        background-size: 80vw 80vw;
-    }
-    .about{
-        margin-top: 13%;
-    }
-    .avatar{
-        height: 45vw;
-    }
-    .clouds{
-        padding-bottom: 17%;
-    }
-    
-}
+
+/* ------------------------------------------------------------------ */
+/* ---------------------------------------------effects   */
+/* -------------------------------------------------------------------------- */
 
 
-    
-    
+
 
 

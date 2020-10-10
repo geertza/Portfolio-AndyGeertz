@@ -10,7 +10,7 @@ export default function Header() {
         <Navbar.Brand >
             <img src={Logo} alt='' className='logo' />
         </Navbar.Brand>
-        <h1 className='m-auto hello'>Hello! I'm Andy,</h1>
+        
          <Nav className="ml-auto linkage">
             <Nav.Link href="https://github.com/geertza" variant="secondary">
                 <img alt='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQh8L2IT3WGVeUE0hrTFceDFd3AFVcwMdwf5A&usqp=CAU'          src={GitHub} className='icon' />
