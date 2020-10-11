@@ -12,24 +12,13 @@ class MyVerticallyCenteredModal extends React.Component {
     super()
 
     this.state = {
-      
-        displayTitle: "NerdVerse",
-        displayP1: "Basic trivia game about popular science-fiction tv-shows and movies.Starts out with a dialogue introduction then asks multiply choice questions.",
-        displayP2: " Timed code quiz with multiple-choice questions. Featuring dynamically updatedHTML and CSS powered by JavaScript code, with a clean, polished, and responsive user interface.",
-        img:'nerdverse.webp',
-        lang: ['html','css','js'],
-        demo: 'https://geertza.github.io/NerdVerse/',
-        git:'https://github.com/geertza/the-sloshed-guide'
-        
-      
-
-      // displayTitle:'',
-      // displayP1:'',
-      // displayP2:'',
-      // lang:[],
-      // git:'',
-      // demo:'',
-      // img:'sunLogo.png'
+      displayTitle:'',
+      displayP1:'',
+      displayP2:'',
+      lang:[],
+      git:'',
+      demo:'',
+      img:'sunLogo.png'
     };
   }
   
@@ -64,7 +53,7 @@ class MyVerticallyCenteredModal extends React.Component {
         enforceFocus={true}
         style={{
           zIndex:'9999',
-         
+         marginTop:'-3%'
         
         }}
       >
@@ -104,8 +93,8 @@ class MyVerticallyCenteredModal extends React.Component {
                 />
                 </Col>
                 <Col md={4}> 
-                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"5px 3%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.git}>GitHub Code</Button>
-                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"0% 3%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.demo}>Live Demo</Button>
+                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"5px 1%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.git}>GitHub Code</Button>
+                <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"0% 1%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.demo}>Live Demo</Button>
                 <div>
       <ul>
           {this.state.lang.map(function (image){

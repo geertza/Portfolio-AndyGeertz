@@ -6,7 +6,7 @@ import MyVerticallyCenteredModal from './Modal'
 
 function Projects() {
     // -------------states for models---------------
-    const [modalShow, setModalShow] = React.useState(true);
+    const [modalShow, setModalShow] = React.useState(false);
     const [title, setTitle] = React.useState('nerd');
      return (
         <div className='proBg'>
