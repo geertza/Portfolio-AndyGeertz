@@ -56,7 +56,7 @@ h4{
     text-align: center;
     position: absolute;
     right: 5vw;
-    top: 10vh;
+    top: 2vh;
     width: 70vw;
     padding: 2%;
     text-shadow: black 2px 1px
@@ -77,9 +77,9 @@ h4{
   padding: 0;
  
 }
-/* .meet{
-    font-size: 3vw;
-} */
+.meet{
+    margin-bottom: 10%;
+}
 .clouds{
     height: 100vh;
       color: rgba(84, 73, 73, 0.904);
@@ -295,13 +295,19 @@ body{
     .clusterTitle{
         font-size: 2.2vh;
     }
+    .hello{
+        font-size: 7vw;
+    }
+    .aboutText{
+        font-size: 4vw;
+    }
   }  
   @media only screen and (max-width: 565px) {
     .aboutText{
         font-size: 5vw;
     }
     .avatar{
-        height: 40vh;
+        height: 50vh;
     }
     .text{
         height: 20vh;
@@ -321,18 +327,24 @@ body{
     .proTitle{
         font-size: 9vw;
     }
+    .about{
+        margin-top: 5vh;
+    }
     
   }  
 
   @media only screen and (max-width: 460px) {
         .proGrid{
-            margin-top: 15vh;
+            margin-top: 23vh;
         }
         .ProCluster{
             height: 42vw;
             width: 42vw;
         }
         .proTitle{
+            position: absolute;
+            top: 5vw;
+            left: 30vw;
             font-size: 5.5vh;
         }
         #sloshed{
@@ -357,6 +369,26 @@ body{
         }
        .linkage{
            margin-right: -5vw;
+       }
+       .about{
+           margin-top: 12vh;
+          width: 80vw;
+           
+       }
+       .avatar{
+           width: 35vw ;
+       }
+       .aboutText{
+          text-align: left;
+            width: 55vw;
+            position: absolute;
+            right: 0vw;
+       }
+       .hello{
+           font-size: 9vw;
+       }
+       .meet{
+           font-size: 7vw;
        }
     }
 
