@@ -13,6 +13,7 @@
     "react-page-scroller": "^2.0.7-beta",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "swiper": "^6.3.3",
     "twilio": "^3.49.2"
   },
   "scripts": {

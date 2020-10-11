@@ -1,8 +1,6 @@
 
 import React from 'react';
-
 import {Form,Row,InputGroup,FormControl,Button} from 'react-bootstrap'
-
 
 class Contact extends React.Component {
   constructor() {
@@ -76,14 +74,15 @@ class Contact extends React.Component {
   render() {
       return (
       
-        <div className='bg'>
+        
         <div className="contact " >
-          <h2 style={{textAlign:'center',fontSize:'3.2vw'}}>Love to hear your thoughts..</h2>
+          <h2 className='love'>Love to hear your thoughts..</h2>
           
           <Row  className="contactMe"  >
             <a className='conMe'  href="tel:1-406-539-1218">1-(406)539-1218</a>
             <a className='conMe' href="mailto:webmaster@example.com">Geertza@gmail.com</a>
           </Row>
+          <div className='bg'>
           <div  className='contactCard'>
             <Form className='contactForm'
               onSubmit={this.handleSubmit}
@@ -97,7 +96,8 @@ class Contact extends React.Component {
                 Last Name
                 <Form.Control   placeholder="Smith" name='lName' onChange={this.onHandleChange}/>
               </Form.Group>
-           
+            </Form.Row>
+            <Form.Row>
               <Form.Group  controlId="formGridEmail" className='mr-auto' >
                 <Form.Label >Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" onChange={this.onHandleChange} name='email'  />
@@ -115,12 +115,12 @@ class Contact extends React.Component {
                 <FormControl 
                   as="textarea"
                   aria-label="With textarea"
-                  style={{height:"18vh",overflow:'scroll',marginBottom:'5px'}}
                   name="text"
                   onChange={this.onHandleChange}
+                  className="text"
                 />
               </InputGroup  >
-              <Button variant="secondary" type="submit" style={{width:'100%',color:'gold',textShadow:'black .8px .8px',backgroundColor:'black',fontWeight:'600',fontSize:'2svw'}} >
+              <Button  type="submit"  variant="secondary" className='submit'  >
                 Submit
               </Button>
             </Form>

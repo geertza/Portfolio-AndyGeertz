@@ -6,7 +6,7 @@ import MyVerticallyCenteredModal from './Modal'
 
 function Projects() {
     // -------------states for models---------------
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = React.useState(true);
     const [title, setTitle] = React.useState('nerd');
      return (
         <div className='proBg'>
@@ -18,11 +18,12 @@ function Projects() {
                     show={modalShow}
                     onHide={() => 
                     setModalShow(false)} />
+                <div className='d-flex justify-content-center'>
                 <div className='proGrid '>
                     {/* ---------------------nerdverse------------------- */}
                     <div className='ProCluster' >
-                        <div className='clusterTitle' >Nerd Verse (Trivia Game)</div>
-                        <div className='proImage nerd'/>
+                        <div className='proImage nerd' >
+                        <div className='clusterTitle' >NerdVerse (Trivia)</div>
                         <Button variant="warning" className='probutton nerdButton'
                             onClick={() =>{ 
                             setTitle('nerdverse')
@@ -30,13 +31,13 @@ function Projects() {
                             Take a look
                         </Button>
                         </div>
-
+                        </div>            
                         {/* -------------sloshed--------- */}
                         <div className='ProCluster pcRight' >
-                        <div className='clusterTitle' >(Pub Locator App)</div>
                         <div className='proImage sloshed'>
+                        <div className='clusterTitle' >(Pub Locator App)</div>
                         <div id='sloshed' >The Sloshed Guide</div> 
-                        </div>
+                        
                         <Button variant="warning" className='probutton sloshedButton'
                             onClick={() =>{ 
                             setTitle('sloshed')
@@ -44,10 +45,12 @@ function Projects() {
                             Take a look
                         </Button>
                         </div>
+                        </div>
                         {/* ---------burger------------------------- */}
                         <div className='ProCluster  ' >
-                        <div className='clusterTitle' >(Make a burger app)</div>
-                        <div className='proImage burger'/>
+                        <div className='proImage burger'>
+                        <div className='clusterTitle' >(Make a burger)</div>
+                        
                         <Button variant="warning" className='probutton '
                             onClick={() =>{ 
                             setTitle('burger')
@@ -55,21 +58,22 @@ function Projects() {
                             Take a look
                         </Button>
                         </div>
+                        </div>
                         {/* -------------Emp---------------------- */}
                         <div className='ProCluster pcRight' >
+                        <div className='proImage emp'>
                         <div className='clusterTitle' >(Employee directory )</div>
-                        <div className='proImage emp'> 
-                        <div id='emp'>Emp List</div>
-                        </div>
-                        <Button variant="warning" className='probutton '
+                         <div id='emp'>Emp List</div>
+                        <Button variant="warning" className='probutton empButton '
                             onClick={() =>{ 
                             setTitle('emp')
                             setModalShow(true)}}>
                             Take a look
                         </Button>
+                        </div>
                     </div>
                 </div>
-                
+                </div>
             </div>
         </div>
     )

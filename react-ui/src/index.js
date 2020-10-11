@@ -6,6 +6,7 @@ import Header from './Component/Header/Header'
 import Project from './Component/Projects/Projects'
 import About from './Component/Intro/Intro'
 import Contact from './Component/Contact/Contact'
+
 // css
 import './index.css';
 
