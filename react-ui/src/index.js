@@ -9,16 +9,18 @@ import Contact from './Component/Contact/Contact'
 
 // css
 import './index.css';
+import Skills from './Component/Skills/skills';
 
 ReactDOM.render(
-    <div>
+    <div >
        <React.Fragment>
         <Header />
-        <ReactPageScroller>
+        <Skills />
+        {/* <ReactPageScroller>
           <About />
           <Project />
           <Contact />
-        </ReactPageScroller>
+        </ReactPageScroller> */}
       </React.Fragment>
     </div>,
   document.getElementById("root"),
