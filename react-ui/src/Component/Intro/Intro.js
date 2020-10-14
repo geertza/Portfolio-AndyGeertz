@@ -5,7 +5,7 @@ import avatar from '../../visuals/avatar5.webp'
 export default function about() {
   
   return (
-        <div >
+        <div className='intro' >
           <div className="clouds" >
           <img src={avatar}  alt=''className='avatar'/>
             <div className='about'>

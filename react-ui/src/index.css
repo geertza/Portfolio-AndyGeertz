@@ -52,6 +52,9 @@ h4{
 /* ///////////////////////////////////////////////////////////////
 //////////////////////////// intro 
 /////////////////////////////////////////// */
+.intro{
+    background-color: rgba(15, 15, 78, 0.972);
+}
 .about {
     text-align: center;
     position: absolute;
@@ -98,10 +101,11 @@ h4{
 
 
 .proBg{
-    background-image: url(./visuals/sun.webp);
+    /* background-image: url(./visuals/deathStar.webp); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80% auto;
+    background-size: 60% auto;
+    background-attachment: fixed;
     height: 115vh;
     background-color: black;
 }
@@ -112,6 +116,7 @@ h4{
     z-index: 999;
     color: rgb(38, 109, 209);
     text-shadow: silver 1px 1px;
+    background-color: black;
 }
 .clusterTitle{
     text-align: center;
@@ -160,8 +165,8 @@ h4{
     background-color: rgba(15, 15, 78, 0.972); 
 }
 .ProCluster{
-    width: 20vw;
-    height: 20vw;
+    width: 50vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -206,12 +211,34 @@ text-align: center;
     padding: 20% 10%;
     text-align: center;
     }
+/* ---------slide--------------*/
+
+.fa-arrow-left , .fa-arrow-right{
+font-size: 5vh;
+/* color: blue; */
+}
+.proSlide{
+    background-image: url('./visuals/deathStar.webp');
+    background-size: 30% auto;
+    background-repeat: space;
+    border-style: groove;
+    margin: 15vh 10vw;
+    width: 80vw;
+    /* background-color: rgba(255, 0, 0, 0.197); */
+}
+
+
+
 
 /* /////////////////////////////////////////////////////   //////
 ////////////////////Contact
 /////////////////////////////////////////////////     */
 .contact{
     margin-top: 2vh;
+    background-image: url('./visuals/sun.webp');
+    background-repeat: no-repeat;
+    background-color: rgb(69, 11, 11);
+    height: 100vh;
 }
 form{
     background-color: black;
@@ -259,7 +286,7 @@ body{
 /* /////////////////////////////////////////////////////////////////
 ////////////////responsive corrections
 ////////////////////////////////////////////////// */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     .love {
       font-size: 4vw;
       max-width: 50vw;
@@ -390,7 +417,7 @@ body{
        .meet{
            font-size: 7vw;
        }
-    }
+    } */
 
 
 
