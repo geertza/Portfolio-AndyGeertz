@@ -99,7 +99,8 @@ export default class ProjectCarousal extends Component {
         items={items}
         responsive={responsive}
         autoWidth
-        disableDotsControls 
+        disableDotsControls
+        mobileTouch={false} 
     />
       </div>
     )

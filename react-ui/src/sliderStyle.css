@@ -12,18 +12,18 @@
     outline-width: 0; }
   
   .awssld {
-    --organic-arrow-thickness: 14px;
-    --organic-arrow-height: 10vh;
-    --slider-height-percentage: 80%;
+    --organic-arrow-thickness: 5px;
+    --organic-arrow-height: 5vh;
+    --slider-height-percentage: 10%;
     --loader-bar-color: gold;
     --loader-bar-height: 6px;
     --control-button-width: 10vw;
-    --control-button-height: 24vh;
+    --control-button-height: 10vh;
     --control-button-opacity: 0.5;
     --control-button-hover-opacity: 0.75;
     --control-button-background: rgba(128, 128, 128, 0.544);
     --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
-    --slider-transition-duration: 575ms;
+    --slider-transition-duration: 2000ms;
     --organic-arrow-color: gold;
     --organic-arrow-border-radius: 15px;
     --control-bullet-color: black;
@@ -93,7 +93,7 @@
       height: var(--control-button-height);
       position: absolute;
       z-index: 10;
-      top: calc(50% - (0.5 * var(--control-button-height)));
+      bottom: 25vh;
       border: none;
       background-color: var(--control-button-background);
       color: #fff;
@@ -112,11 +112,9 @@
       opacity: var(--control-button-opacity-hover);
       -webkit-transform: translate3d(100%, 0, 0);
               transform: translate3d(100%, 0, 0); }
-    .awssld__controls--hidden {
-      display: none; }
-    @media all and (max-width: 520px) {
-      .awssld__controls {
-        visibility: hidden; } }
+    /* .awssld__controls--hidden {
+      display: none; } */
+   
     .awssld__bar {
       display: block;
       width: 100%;

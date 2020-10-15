@@ -57,6 +57,7 @@ h4{
 //////////////////////////// intro 
 /////////////////////////////////////////// */
 .intro{
+    background-image: url('./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
     background-color: rgba(15, 15, 78, 0.972);
     height: 100vh;
 }
@@ -107,14 +108,15 @@ h4{
 
 
 .proBg{
-    height: 115vh;
+    background-image: url('./visuals/deathStar.webp');
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: center;
+    height: 100vh;
     background-color: black;
 }
 
 .proTitle{
-    background-image: url(./visuals/deathStar.webp);
-    background-size: auto 100%;
-    background-repeat: space 10vw;
     text-align: center;
     font-size: 10vh;
     z-index: 999;
@@ -270,11 +272,10 @@ form{
     text-shadow: silver .5px .5px;
     border-radius: 30%;
 }
-/* body{
-    background-image: url(./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg);
-    background-size: 100% 100%;
+body{
+   background-color: blue;
     height: 100vh;
-} */
+}
 .submit{
     width: 60%;
     margin: 0 20%;
@@ -291,6 +292,9 @@ form{
 ////////////////responsive corrections
 ////////////////////////////////////////////////// */  
   @media only screen and (max-width: 600px) {
+    .proBg{
+        background-size: 120% auto;
+    }
     .proMargin{
         width: 23vh;
     }

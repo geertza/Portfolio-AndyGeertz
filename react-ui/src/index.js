@@ -11,7 +11,7 @@ import Contact from './Component/Contact/Contact'
 
 // css
 import './alice.css';
-import animationStyles from 'react-awesome-slider/src/styled/cube-animation/cube-animation.scss';
+
 import './sliderStyle.css';
 import './index.css';
 
@@ -22,7 +22,6 @@ ReactDOM.render(
         {/* <Skills /> */}
         <AwesomeSlider
     animation="cubeAnimation"
-    cssModule={[ animationStyles]}
     bullets= {false}
   >
           <div><About /></div>
