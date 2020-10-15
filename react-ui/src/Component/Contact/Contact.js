@@ -76,6 +76,7 @@ class Contact extends React.Component {
       
         
         <div className="contact " >
+          <br /><br />
           <h2 className='love'>Love to hear your thoughts..</h2>
           
           <Row  className="contactMe"  >

@@ -53,7 +53,7 @@ class MyVerticallyCenteredModal extends React.Component {
         enforceFocus={true}
         style={{
           zIndex:'9999',
-         marginTop:'-3%'
+         marginTop:'3%'
         
         }}
       >

@@ -10,14 +10,10 @@ import About from './Component/Intro/Intro'
 import Contact from './Component/Contact/Contact'
 
 // css
-
-// import 'react-awesome-slider/dist/styles.css';
+import './alice.css';
 import animationStyles from 'react-awesome-slider/src/styled/cube-animation/cube-animation.scss';
-// import coreStyles from 'react-awesome-slider/src/core/styles.scss';
 import './sliderStyle.css';
-// import 'react-awesome-slider/dist/custom-animations/fall-animation.css';
 import './index.css';
-// import Skills from './Component/Skills/skills';
 
 ReactDOM.render(
     <div >
@@ -27,6 +23,7 @@ ReactDOM.render(
         <AwesomeSlider
     animation="cubeAnimation"
     cssModule={[ animationStyles]}
+    bullets= {false}
   >
           <div><About /></div>
           <div><Project /></div>
