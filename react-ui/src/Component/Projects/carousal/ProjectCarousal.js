@@ -85,6 +85,7 @@ export default class ProjectCarousal extends Component {
         </div>
         </div>
         ,
+        <div></div>,
          ];
     return (
       <div style={{width:'100%'}}>

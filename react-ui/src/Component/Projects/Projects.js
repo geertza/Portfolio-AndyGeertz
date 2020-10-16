@@ -16,7 +16,7 @@ function Projects() {
                 <h2 className='skills'>Skillz</h2>
                 <div  className='skillBar'>
                 <Row>
-                <Col  sm={4}>
+                <Col  md={4}>
                     <p><strong>Browser Based Technologies</strong><br/>
                     • HTML<br/>
                     • CSS<br/>
@@ -31,12 +31,12 @@ function Projects() {
                     <p><strong>Deployment</strong><br/>
                     • Heroku<br/>
                     • Git</p>
-                     <p><strong>Graphics Tools</strong></p>
+                     <p><strong>Graphics Tools</strong>
                     • Sketch-up<br/>
                     • Gimp<br/>
-                    • Blender<br/>
+                    • Blender<br/></p>
                     </Col>
-                    <Col sm={4}>
+                    <Col md={4}>
                     
                     <p><strong>JavaScript Methods</strong><br/>
                     • OOP (Object Oriented Programming)<br/>
@@ -55,7 +55,7 @@ function Projects() {
                     • Standup<br/>
                     • Retros</p>
                     </Col>
-                    <Col sm={4}>
+                    <Col md={4}>
                     <p><strong>Quality and Performance</strong><br/>
                     • Unit Testing<br/>
                     • Google Lighthouse<br/>

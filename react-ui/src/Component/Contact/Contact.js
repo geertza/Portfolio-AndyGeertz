@@ -121,7 +121,7 @@ class Contact extends React.Component {
                   className="text"
                 />
               </InputGroup  >
-              <Button  type="submit"  variant="secondary" className='submit'  >
+              <Button  type="submit"  variant="secondary" className='submit' style={{fontSize:'2em'}}  >
                 Submit
               </Button>
             </Form>
