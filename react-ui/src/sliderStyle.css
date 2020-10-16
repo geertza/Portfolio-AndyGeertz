@@ -14,16 +14,16 @@
   .awssld {
     --organic-arrow-thickness: 5px;
     --organic-arrow-height: 5vh;
-    --slider-height-percentage: 10%;
+    --slider-height-percentage: 0%;
     --loader-bar-color: gold;
     --loader-bar-height: 6px;
-    --control-button-width: 10vw;
-    --control-button-height: 10vh;
+    --control-button-width: 6vw;
+    --control-button-height: 50vh;
     --control-button-opacity: 0.5;
     --control-button-hover-opacity: 0.75;
     --control-button-background: rgba(128, 128, 128, 0.544);
     --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
-    --slider-transition-duration: 2000ms;
+    --slider-transition-duration: 1000ms;
     --organic-arrow-color: gold;
     --organic-arrow-border-radius: 15px;
     --control-bullet-color: black;
@@ -43,7 +43,7 @@
     .awssld__container {
       display: block;
       width: 100%;
-      height: 100vh;
+      height: 120vh;
       padding-bottom: var(--slider-height-percentage);
       overflow: hidden;
     }
@@ -93,7 +93,7 @@
       height: var(--control-button-height);
       position: absolute;
       z-index: 10;
-      bottom: 25vh;
+      top: 25vh;
       border: none;
       background-color: var(--control-button-background);
       color: #fff;

@@ -53,7 +53,7 @@ class MyVerticallyCenteredModal extends React.Component {
         enforceFocus={true}
         style={{
           zIndex:'9999',
-         marginTop:'3%'
+         marginTop:'1%'
         
         }}
       >
@@ -68,7 +68,7 @@ class MyVerticallyCenteredModal extends React.Component {
             <h1 className='justify-content-center'
                 style={{
                 textAlign:"center",
-                fontSize:"4vw",
+                fontSize:"2em",
                 width:"auto",
                 margin:'0',
                 marginLeft:'20%'

@@ -24,6 +24,11 @@ h4{
     background-color: royalblue;
     border-style: solid;
 }
+p{
+    font-size: 1em;
+    color: rgb(0, 149, 255);
+    text-shadow: gray .5px .5px;
+}
 /* //////////fonts */
 
 /* ////////////////////////////////////////////////
@@ -59,7 +64,7 @@ h4{
 .intro{
     background-image: url('./visuals/curioso-photography-MGbX2v0c3e4-unsplash.jpg');
     background-color: rgba(15, 15, 78, 0.972);
-    height: 100vh;
+    height: 120vh;
 }
 .about {
     text-align: center;
@@ -91,7 +96,7 @@ h4{
     margin-bottom: 10%;
 }
 .clouds{
-    height: 100vh;
+    height: 120vh;
       color: rgba(84, 73, 73, 0.904);
     background: url(./visuals/clouds4.webp) repeat top center;
     padding: 5% 0 5% 0;
@@ -110,9 +115,9 @@ h4{
 .proBg{
     background-image: url('./visuals/deathStar.webp');
     background-repeat: no-repeat;
-    background-size: 80% auto;
-    background-position: center;
-    height: 100vh;
+    background-size: 50% auto;
+    /* background-position: center; */
+    min-height: 120vh;
     background-color: black;
 }
 
@@ -122,7 +127,7 @@ h4{
     z-index: 999;
     color: rgb(38, 109, 209);
     text-shadow: silver 1px 1px;
-    background-color: black;
+    /* background-color: black; */
 }
 .clusterTitle{
     text-align: center;
@@ -142,7 +147,7 @@ h4{
     line-height: .3vw;
     background-color: black;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: auto;
     color: gold;
     border-style: ridge;
     border-width: 4px;
@@ -171,14 +176,42 @@ h4{
     background-color: rgba(15, 15, 78, 0.972); 
 }
 .ProCluster{
-    width: 30vh;
-    height: 30vh;
+    width: 24vh;
+    height: 24vh;
     position: relative;
-    margin-right: 20px;
+    
 }
 .proMargin{
-    width: 35vh;
+    width: 26vh;
+    
 }
+.proSlide{
+    max-width: 85vw;
+    margin: 5vh 25vw 0 25vw;
+}
+.skills{
+    text-align: center;
+    margin: 0 10vw;
+    width: 80vw;
+    background-color: rgba(42, 48, 59, 0.449);
+    color: rgb(38, 109, 209);
+    text-shadow: silver 1px 1px;
+    ;
+}
+.skillBar{
+ max-height: 60vh;
+    overflow: scroll;
+    width:80vw;
+    margin: 0 10vw;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  background-color: rgba(39, 36, 36, 0.843);
+}
+.skillBar::-webkit-scrollbar {
+    display: none;
+  }
 
 /* ///////////////cluster planets */
 .nerd{
@@ -221,10 +254,7 @@ text-align: center;
     padding: 10% 10%;
     text-align: center;
     }
-.proSlide{
-    max-width: 85vw;
-    margin: 10vh 20vw;
-}
+
 
 
 
@@ -238,7 +268,7 @@ text-align: center;
     background-image: url('./visuals/sun.webp');
     background-repeat: no-repeat;
     background-color: rgb(69, 11, 11);
-    min-height: 100vh;
+    height: 120vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -274,7 +304,7 @@ form{
 }
 body{
    background-color: blue;
-    height: 100vh;
+    min-height: 100vh;
 }
 .submit{
     width: 60%;
@@ -345,7 +375,7 @@ body{
     } 
     .proSlide{
         max-width: 95vw;
-        margin: 20vh auto;
+        margin: 10vh 10vw 0 10vw;
     }   
     #sloshed{
         font-size: 6vw;
