@@ -17,7 +17,7 @@ color: gold;
 
 h2,h1{
     font-family: 'Grandstander', cursive;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 
@@ -75,7 +75,7 @@ p{
     position: absolute;
     right: 10vw;
     top: 2vh;
-    width: 60vw;
+    width: 50vw;
     padding: 2%;
     text-shadow: black 2px 1px
 }
@@ -84,12 +84,16 @@ p{
     
 }
 .aboutText{
-    text-align: right;
-    font-size: 3vw;
-    background-color: rgba(84, 73, 73, 0.612);
+    /* text-align: right; */
+    font-size: 3vh;
+    background-color: rgba(0, 0, 0, 0.639);
+    line-height: 150%;
+    position: absolute;
+    right: 0vw;
 }
 .avatar{
     height: 65vh;
+    max-width: 30vw;
   position: absolute;
   left: 10%;
   top: 20%;
@@ -97,7 +101,7 @@ p{
  
 }
 .meet{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .clouds{
     height: 120vh;
@@ -342,7 +346,10 @@ text-align: center;
         height: 7vw;
     }
     .aboutText{
-        font-size: 5vw;
+        font-size: 2.5vh;
+        background-color: rgba(0, 0, 0, 0.639);
+        width: 50vw;
+       
     }
     .avatar{
         height: 70vh;
@@ -384,6 +391,9 @@ text-align: center;
     form{
         margin-top: 15px;
     }
+    .avatar{
+        max-width: 30vw;
+    }
     
   }   
 
@@ -424,7 +434,7 @@ text-align: center;
            margin-right: -5vw;
        }
        .about{
-           margin-top: 12vh;
+           margin-top: 10vh;
           width: 80vw;
            
        }
@@ -432,13 +442,10 @@ text-align: center;
            width: 35vw ;
        }
        .aboutText{
-          text-align: left;
-            width: 55vw;
-            position: absolute;
-            right: 0vw;
+        font-size: 2vh;
        }
        .hello{
-           font-size: 9vw;
+           font-size: 7vw;
        }
        .meet{
            font-size: 7vw;
