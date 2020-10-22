@@ -12,20 +12,20 @@
     outline-width: 0; }
   
   .awssld {
-    --organic-arrow-thickness: 5px;
-    --organic-arrow-height: 5vh;
+    --organic-arrow-thickness: 8px;
+    --organic-arrow-height: 8vw;
     --slider-height-percentage: 0%;
     --loader-bar-color: gold;
     --loader-bar-height: 6px;
-    --control-button-width: 6vw;
-    --control-button-height: 50vh;
+    --control-button-width: 6.5vw;
+    --control-button-height: 30vh;
     --control-button-opacity: 0.5;
     --control-button-hover-opacity: 0.75;
     --control-button-background: rgba(128, 128, 128, 0.544);
     --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
     --slider-transition-duration: 1000ms;
     --organic-arrow-color: gold;
-    --organic-arrow-border-radius: 15px;
+    --organic-arrow-border-radius: 10px;
     --control-bullet-color: black;
     --control-bullet-active-color: gold; }
   
@@ -93,7 +93,7 @@
       height: var(--control-button-height);
       position: absolute;
       z-index: 10;
-      top: 25vh;
+      top: 55vh;
       border: none;
       background-color: var(--control-button-background);
       color: #fff;

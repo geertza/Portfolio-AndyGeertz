@@ -79,16 +79,18 @@ class Contact extends React.Component {
           <br /><br />
           <h2 className='love'>Love to hear your thoughts..</h2>
           
-          <Row  className="contactMe"  >
-            <a className='conMe'  href="tel:1-406-539-1218">1-(406)539-1218</a>
-            <a className='conMe' href="mailto:webmaster@example.com">Geertza@gmail.com</a>
-          </Row>
+          
           <div className='bg'>
           <div  className='contactCard'>
+            <Row  className="contactMe"  >
+            <a className='conMe'  href="tel:1-406-539-1218">(406)539-1218</a>
+            <a className='conMe' href="mailto:webmaster@example.com">Geertza@gmail.com</a>
+              </Row>
             <Form className='contactForm'
               onSubmit={this.handleSubmit}
             >
             <Form.Row>
+              
               <Form.Group    controlId="formGridfirstName" className='mr-auto' >
                 First Name
                 <Form.Control placeholder="John" onChange={this.onHandleChange} name='fName' />
@@ -121,7 +123,7 @@ class Contact extends React.Component {
                   className="text"
                 />
               </InputGroup  >
-              <Button  type="submit"  variant="secondary" className='submit' style={{fontSize:'2em'}}  >
+              <Button  type="submit"  variant="warning" className='submit'   >
                 Submit
               </Button>
             </Form>
