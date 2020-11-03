@@ -81,11 +81,11 @@ p{
 }
 .hello{
     text-align: left;
-    
-}
+    margin-left: -46%;
+  }
 .aboutText{
     /* text-align: right; */
-    font-size: 3vh;
+    font-size: 2.2vh;
     background-color: rgba(0, 0, 0, 0.639);
     line-height: 150%;
     position: absolute;
@@ -102,6 +102,7 @@ p{
 }
 .meet{
     margin-bottom: 5%;
+    margin-left: -40%;
 }
 .clouds{
     height: 120vh;
@@ -201,7 +202,7 @@ p{
     text-align: center;
     margin: 0 10vw;
     width: 80vw;
-    background-color: rgba(42, 48, 59, 0.449);
+    background-color: rgba(11, 41, 98, 0.449);
     color: rgb(38, 109, 209);
     text-shadow: silver 1px 1px;
     ;
@@ -221,7 +222,27 @@ p{
     display: none;
   }
 
+/* //////////promodal   */
+.modalList{
+    width: 100%;
+    background-color: green;
+    padding-inline-start: 0px;
+}
+
 /* ///////////////cluster planets */
+.Dat{
+    background-image: url('./visuals/random.jpg');
+}
+#Dat{
+    font-size: 3vw;
+    line-height: 80%;
+    color: rgb(86, 121, 228);
+    font-weight: 900;
+    font-family: stardos stencil;
+    padding: 5% 10px;
+    text-align: center;
+    text-shadow: 1px 1px rgb(21, 5, 56);
+}
 .nerd{
     background-image: url(./visuals/NVcrest.webp);
     background-size: auto 70%;
@@ -306,6 +327,9 @@ text-align: center;
     margin-left: 25vw;
     text-shadow: silver .5px .5px;
     border-radius: 30%;
+    text-align: center;
+    padding: 5px;
+    font-size: 4vw;
 }
 
 .submit{
@@ -387,6 +411,7 @@ text-align: center;
     }
     .conMe{
         margin-left: 10vw;
+        font-size: 20px;
     }
     form{
         margin-top: 15px;
@@ -421,8 +446,6 @@ text-align: center;
            line-height: 10vh;
         }
         
-       
-        
         .logo{
         height: 10vh;
         margin-left: -5px;
@@ -442,13 +465,15 @@ text-align: center;
            width: 35vw ;
        }
        .aboutText{
-        font-size: 2vh;
+        font-size: 1.6vh;
        }
        .hello{
            font-size: 7vw;
+           margin-left: 5%;
        }
        .meet{
            font-size: 7vw;
+           margin-left: 0;
        }
        .love{
            font-size: 6vw;

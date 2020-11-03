@@ -9,7 +9,7 @@ export default function about() {
           <div className="clouds" >
           <img src={avatar}  alt=''className='avatar'/>
             <div className='about'>
-              <h1 className='m-auto hello'>Hello! I'm Andy,</h1>
+              <h1 className='hello'>Hello! I'm Andy,</h1>
               <h2  className='meet'> Nice to meet you!</h2>
               <h3 className='aboutText'>
               I'm an aspiring web-developer fresh out of boot camp. I've always had a fixation for unraveling technical issues, growing up I was often glued to a keyboard.

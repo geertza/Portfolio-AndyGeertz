@@ -20,6 +20,25 @@ export default class ProjectCarousal extends Component {
     };
     
     let items = [
+       // Dat---------------------------------
+       <div className='proMargin'>
+       <div className='ProCluster' >
+       <div className='proImage Dat' >
+       <div className='clusterTitle' >Role Playing Chat</div>
+       <div id='Dat' >Dungeons </div>
+       <div id='Dat' >& </div>
+       <div id='Dat' >Theater</div> 
+       <Button variant="warning" className='probutton DatButton'
+           onClick={() =>{ 
+               this.setState({title: 'Dat'});
+           this.setState({modalShow: true});
+           }}>
+           Take a look
+       </Button>
+       </div>
+       </div> 
+       </div>
+       ,
         // nerd---------------------------------
         <div className='proMargin'>
         <div className='ProCluster' >

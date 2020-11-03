@@ -2,7 +2,15 @@
 
 
   const projectInfo={ 
- 
+    Dat:{
+      title: "Dungeons and Theater",
+      p1: "Chat application which allows each user to do a web search for a avatar to represent them, and search for a background allowing the users to act out a scene",
+      p2: " Using a socket.io backend, React front-end, and react.context to create an immersive real-time chat. ",
+      img:'Dat.png',
+      lang: ['html','css','js','socket','react','node'],
+      demo: 'https://dungeons-and-theater.herokuapp.com/',
+      git:'https://github.com/geertza/Dungeons-and-Theater'
+      },
     nerdverse:{
     title: "NerdVerse",
     p1: "Basic trivia game about popular science-fiction tv-shows and movies.Starts out with a dialogue introduction then asks multiply choice questions.",

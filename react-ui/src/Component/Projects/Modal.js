@@ -18,7 +18,7 @@ class MyVerticallyCenteredModal extends React.Component {
       lang:[],
       git:'',
       demo:'',
-      img:'sunLogo.png'
+      img:'sunLogo.webp'
     };
   }
   
@@ -96,7 +96,7 @@ class MyVerticallyCenteredModal extends React.Component {
                 <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"5px 1%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.git}>GitHub Code</Button>
                 <Button onClick={this.props.onHide} variant="secondary" style={{backgroundColor:'rgb(146, 146, 30)',color:"black",margin:"0% 1%",textShadow:"grey .5px .5px",padding:'2px'}} href={this.state.demo}>Live Demo</Button>
                 <div>
-      <ul>
+      <ul className='modalList'>
           {this.state.lang.map(function (image){
             return <img key={image} 
             src={require(`../../visuals/${image}.png`)} 
