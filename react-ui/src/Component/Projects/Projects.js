@@ -8,12 +8,12 @@ function Projects() {
      return (
         <div className='proBg'>
             <div className='projects '> 
-                <h3  className='proTitle ' >Projects</h3>
+                <h2  className='proTitle h3' >Projects</h2>
                  <div className='proSlide' >
                     <ProCarousal />
                 
                 </div>
-                <h2 className='skills'>Skillz</h2>
+                <h2 className='skills h2'>Skillz</h2>
                 <div  className='skillBar'>
                 <Row>
                 <Col  md={4}>

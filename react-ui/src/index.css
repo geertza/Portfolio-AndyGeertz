@@ -15,13 +15,13 @@ color: gold;
     bottom: 0%;
 }
 
-h2,h1{
+h2,h1,.h2{
     font-family: 'Grandstander', cursive;
     font-size: 5vw;
 }
 
 
-h4{
+h4,.h4{
  line-height: 90%    
 }
 .control-button{
@@ -30,7 +30,7 @@ h4{
 }
 p{
     font-size: 1.2em;
-    color: rgb(0, 149, 255);
+    /* color: rgb(0, 149, 255); */
     text-shadow: gray .5px .5px;
 }
 

@@ -6,10 +6,10 @@
       title: "Dungeons and Theater",
       p1: "Chat application which allows each user to do a web search for a avatar to represent them, and search for a background allowing the users to act out a scene",
       p2: " Using a socket.io backend, React front-end, and react.context to create an immersive real-time chat. ",
-      img:'Dat.png',
+      img:'DAT.png',
       lang: ['html','css','js','socket','react','node'],
       demo: 'https://dungeons-and-theater.herokuapp.com/',
-      git:'https://github.com/geertza/Dungeons-and-Theater'
+      git:'https://github.com/geertza/DAT'
       },
     nerdverse:{
     title: "NerdVerse",

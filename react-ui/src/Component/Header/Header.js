@@ -8,7 +8,7 @@ export default function Header() {
        
         <Navbar className='navbar' >
         <Navbar.Brand >
-            <img src={Logo} alt='' className='logo' />
+            <img src={Logo} alt='Andy Geertz' className='logo' />
         </Navbar.Brand>
         
          <Nav className="ml-auto linkage">

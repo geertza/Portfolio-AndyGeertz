@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "node index",
-    "build": "cd react-ui/ && npm install && npm run build"
+    "build": "cd react-ui/ && npm install && npm run build",
+    "postbuild": "cd react-ui/build && gzip *.js && gzip *.css"
   },
   "cacheDirectories": [
     "node_modules",

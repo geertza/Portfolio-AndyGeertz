@@ -65,7 +65,7 @@ class MyVerticallyCenteredModal extends React.Component {
         }}
          closeButton>
           
-            <h1 className='justify-content-center'
+            <p className='justify-content-center'
                 style={{
                 textAlign:"center",
                 fontSize:"2em",
@@ -73,7 +73,7 @@ class MyVerticallyCenteredModal extends React.Component {
                 margin:'0',
                 marginLeft:'20%'
             }}
-            >{this.state.displayTitle}</h1>
+            >{this.state.displayTitle}</p>
            
          
         </Modal.Header>
@@ -116,11 +116,11 @@ class MyVerticallyCenteredModal extends React.Component {
 
             <Row>
                 <Col>
-                    <h5>Basic Description</h5>
+                    <p className='h5'>Basic Description</p>
                     <p style={{color:'white',lineHeight:'100%'}}>
                     {this.state.displayP1}
                     </p>
-                    <h5>Technical Description</h5>
+                    <p className='h5'>Technical Description</p>
                     <p style={{color:'white',lineHeight:'100%'}}>
                        {this.state.displayP2}
                     </p>
